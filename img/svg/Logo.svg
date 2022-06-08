@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1.332" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#646464"/>
+      <stop offset="1" stop-color="#fafafa"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="-0.598" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fafafa"/>
+      <stop offset="1" stop-color="#646464"/>
+    </linearGradient>
+  </defs>
+  <g id="Logo" transform="translate(-100 -100)">
+    <path id="Vector" class="cls-1" d="M-118.253-218.182h80l67.5,180h5l67.5-180h80v300h-55v-200h-5l-70,170h-40l-70-170h-5v200h-55Z" transform="translate(218.253 318.182)"/>
+    <path id="Vector-2" data-name="Vector" class="cls-2" d="M-93.253-168.182h55l67.5,190h5l67.5-190h55v250h-30v-200h-5l-70,170h-40l-70-170h-5v200h-30Z" transform="translate(218.253 318.182)"/>
+  </g>
+</svg>

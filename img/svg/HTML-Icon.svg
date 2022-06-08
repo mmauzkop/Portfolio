@@ -1,6 +1,54 @@
-<svg width="45" height="50" viewBox="0 0 45 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.025 45L0 0H44.1667L40.1417 45L22.0833 50L4.025 45Z" fill="#E34E26"/>
-<path d="M22.0833 3.74949V46.2495L36.9167 42.2078L40.4167 3.74949H22.0833Z" fill="#EF662A"/>
-<path d="M8.33334 9.58383L9.81317 26.0487H28.8417L28.2032 33.1105L22.0763 34.7505L15.9612 33.113L15.5523 28.5785H10.0415L10.8295 37.3195L22.0748 40.4172L33.3345 37.3195L34.844 20.6045H14.8343L14.3318 15.0288H35.3415L35.8333 9.58367L8.33334 9.58383Z" fill="white"/>
-<path d="M8.33334 9.58383L9.81317 26.0487H28.8417L28.2032 33.1105L22.0763 34.7505L15.9612 33.113L15.5523 28.5785H10.0415L10.8295 37.3195L22.0748 40.4172L33.3345 37.3195L34.844 20.6045H14.8343L14.3318 15.0288H35.3415L35.8333 9.58367L8.33334 9.58383Z" fill="#EBEBEB"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fafafa;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-HTML);
+      }
+
+      .cls-3 {
+        fill: #e34e26;
+      }
+
+      .cls-4 {
+        fill: #ef662a;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-7 {
+        fill: #ebebeb;
+      }
+
+      .cls-8 {
+        fill: rgba(255,255,255,0);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Mask" class="cls-1" width="82.5" height="185" transform="translate(258.627 159.484)"/>
+    </clipPath>
+    <clipPath id="clip-HTML">
+      <rect width="300" height="300"/>
+    </clipPath>
+  </defs>
+  <g id="HTML" class="cls-2">
+    <rect class="cls-8" width="300" height="300"/>
+    <g id="HTML-2" data-name="HTML" transform="translate(-191.127 -101.981)">
+      <path id="HTML-3" data-name="HTML" class="cls-3" d="M232.777,371.981l-24.15-270h265l-24.15,270-108.35,30Z"/>
+      <path id="HTML-4" data-name="HTML" class="cls-4" d="M1000,234.1v255l89-24.25,21-230.75Z" transform="translate(-658.873 -109.622)"/>
+      <path id="HTML-5" data-name="HTML" class="cls-5" d="M503.468,432.378l8.879,98.789H626.518l-3.831,42.371-36.761,9.84-36.691-9.825-2.453-27.207H513.717l4.728,52.446,67.472,18.586,67.558-18.586,9.057-100.29H542.474l-3.015-33.454H665.517l2.951-32.671Z" transform="translate(-244.841 -272.894)"/>
+      <g id="HTML-6" data-name="HTML" class="cls-6">
+        <path id="HTML-7" data-name="HTML" class="cls-7" d="M503.468,432.378l8.879,98.789H626.518l-3.831,42.371-36.761,9.84-36.691-9.825-2.453-27.207H513.717l4.728,52.446,67.472,18.586,67.558-18.586,9.057-100.29H542.474l-3.015-33.454H665.517l2.951-32.671Z" transform="translate(-244.841 -272.894)"/>
+      </g>
+    </g>
+  </g>
 </svg>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>משה מאוזקופ &dash; פורטפוליו</title>
+    <link rel="stylesheet" href="./style-he.css" />
+    <link rel="stylesheet" href="./queries-he.css" />
+    <link rel="icon" href="../img/Favicon.png" />
+    <link rel="apple-touch-icon" href="../img/Favicon.png" />
+    <link rel="manifest" href="../manifest.webmanifest" />
+    <script defer src="../js/script.js"></script>
+    <!-- Font Family:Rubik -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+</head>
+
+<body id="homepage">
+    <section id="header">
+        <header class="header">
+            <a class="logo" href="#homepage"></a>
+            <nav class="nav-bar">
+                <ul class="nav-list">
+                    <li><a class="nav-link" id="lang-link" href="../index.html" title="Switch to English"
+                           onclick="document.documentElement.style.removeProperty('overflow-y');">
+                            <span class="iconify" data-icon="ic:baseline-language"></span>English</a></li>
+                    <li><a class="nav-link" href="#contact"
+                           onclick="document.documentElement.style.removeProperty('overflow-y');">צרו קשר</a></li>
+                    <li><a class="nav-link" href="#about"
+                           onclick="document.documentElement.style.removeProperty('overflow-y');">אודות עליי</a></li>
+                    <li><a class="nav-link" href="#projects"
+                           onclick="document.documentElement.style.removeProperty('overflow-y');">פרויקטים</a></li>
+                    <li><a class="nav-link" href="#skills"
+                           onclick="document.documentElement.style.removeProperty('overflow-y');">כישורים</a></li>
+
+                </ul>
+            </nav>
+
+            <button class="mobile-nav-icons">
+                <div class="mobile-menu-icon" role="button" aria-label="Menu-Icon"></div>
+                <div class="mobile-close-icon" role="button" aria-label="Close-Icon"></div>
+            </button>
+        </header>
+    </section>
+
+    <section class="homepage">
+        <span class="introduce-he">ברוכים הבאים לפורטפוליו שלי</span>
+
+        <div class="profile">
+            <div class="profile-img" role="img" aria-label="Profile-Image"></div>
+
+            <div class="profile-info">
+                <p class="profile-name">משה מאוזקופ
+                    <br><span class="profile-position">מעצב ממשק משתמש וחווית משתמש</span>
+                </p>
+
+                <p class="profile-description">.אוהב לחקור ולעצב דברים חדשים<br />
+                    .ומקפיד תמיד על עיצוב בצורה מדויקת, מסודרת ונקיה
+                </p>
+
+                <div class="profile-links">
+
+                    <button class="resume" type="button"
+                            onclick="location.assign('../docs/My Resume.pdf')">קורות חיים
+                        <span class="iconify"
+                              style="width: 2.4rem; height: 2.4rem; display: flex; align-items: center; justify-content: center;"
+                              data-icon="carbon:document"></span></button>
+
+                    <a class="btn" href="#projects"> הפרויקטים שלי</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="main">
+        <section class="skills" id="skills">
+            <h1 class="heading-black">כישורים</h1>
+
+            <section class="skills-list">
+
+                <figure class="skill">
+                    <img class="skill-icon" src="../img/svg/HTML-Icon.svg" alt="HTML-Icon" />
+                    <span class="skill-description">HTML</span>
+                </figure>
+
+                <figure class="skill">
+                    <img class="skill-icon" src="../img/svg/XD-Icon.svg" alt="Adobe XD-Icon" />
+                    <span class="skill-description">XD</span>
+                </figure>
+
+                <figure class="skill">
+                    <img class="skill-icon" src="../img/svg/Illustrator-Icon.svg" alt="Adobe Photoshop-Icon" />
+                    <span class="skill-description">אילוסטרייטור</span>
+                </figure>
+
+                <figure class="skill">
+                    <img class="skill-icon" src="../img/svg/Photoshop-Icon.svg" alt="Adobe Photoshop-Icon" />
+                    <span class="skill-description">פוטושופ</span>
+                </figure>
+
+                <figure class="skill">
+                    <img class="skill-icon" src="../img/svg/Wix-Icon.svg" alt="Wix-Icon" />
+                    <span class="skill-description">וויקס</span>
+                </figure>
+
+                <figure class="skill">
+                    <img class="skill-icon" src="../img/svg/Figma-Icon.svg" alt="Figma-Icon" />
+                    <span class="skill-description">פיגמה</span>
+                </figure>
+
+                <figure class="skill">
+                    <img class="skill-icon" src="../img/svg/CSS-Icon.svg" alt="CSS-Icon" />
+                    <span class="skill-description">CSS</span>
+                </figure>
+
+            </section>
+
+            <div class="certificates">
+                <p class="certificates-title">תעודות</p>
+
+                <ul class="certificates-list">
+
+                    <li>
+                        <p class="certificates-description">קורס פוטושופ - מתחיל</p>
+                        <button class="btn certificate-btn" type="button"
+                                onclick="location.assign('../docs/Photoshop Essentials Certificate.pdf')">
+                            <span class="iconify"
+                                  style="width: 3.2rem; height: 3.2rem; display: flex; align-items: center; justify-content: center;"
+                                  data-icon="simple-icons:udemy"></span>
+                        </button>
+                    </li>
+
+                    <li>
+                        <p class="certificates-description">תעודת סיום נטקראפט אקדמי</p>
+                        <button class="btn certificate-btn" type="button"
+                                onclick="location.assign('../docs/Netcraft.pdf')">
+                            <span
+                                  class="iconify"
+                                  style="  width: 3.2rem; height: 3.2rem; display: flex; align-items: center; justify-content: center;"
+                                  data-icon="carbon:certificate"></span>
+                        </button>
+                    </li>
+
+                    <li>
+                        <p class="certificates-description">קורס בניית אתרים רספונסיבים</p>
+                        <button class="btn certificate-btn" type="button"
+                                onclick="location.assign('../docs/Build Responsive Real World Websites with HTML and CSS.pdf')">
+                            <span class="iconify"
+                                  style="width: 3.2rem; height: 3.2rem; display: flex; align-items: center; justify-content: center;"
+                                  data-icon="simple-icons:udemy"></span>
+                        </button>
+                    </li>
+
+                    <li>
+                        <p class="certificates-description">קורס פוטושופ - מתקדם</p>
+                        <button class="btn certificate-btn" type="button"
+                                onclick="location.assign('../docs/Photoshop Advanced Certificate.pdf')">
+                            <span class="iconify"
+                                  style=" width: 3.2rem; height: 3.2rem; display: flex; align-items: center; justify-content: center;"
+                                  data-icon="simple-icons:udemy"></span>
+                        </button>
+                    </li>
+
+                    <li>
+                        <p class="certificates-description">קורס פיגמה ועיצוב ממשקים</p>
+                        <button class="btn certificate-btn" type="button"
+                                onclick="location.assign('../docs/Figma UX UI Design Certificate.pdf')">
+                            <span class="iconify"
+                                  style=" width: 3.2rem; height: 3.2rem; display: flex; align-items: center; justify-content: center;"
+                                  data-icon="simple-icons:udemy"></span>
+                        </button>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <blockquote class="quote">
+                עיצוב הוא לא רק איך שהדבר<br>
+                נראה או מורגש אלא איך הוא יעבוד
+                <span>&ndash; סטיב ג'ובס &ndash;</span>
+            </blockquote>
+
+            <div class="main-projects">
+                <h1 class="heading-black">פרויקטים</h1>
+
+                <p class="project-title">חווית משתמש / ממשק משתמש</p>
+
+                <div class="projects-list">
+                    <div class="project">
+                        <div class="project-img" role="img" aria-label="Omnifood-Icon"></div>
+                        <div class="project-info">
+                            <h1 class="project-name">Omnifood</h1>
+
+                            <p class="project-description">
+                                <span>פרויקט קורס &ndash; אתר דסקטופ</span><br />
+                                אתר שמטרתו הזמנת ארוחות ובריאות בתוכנית שבועית אשר יהיו מותאמות לפי הטעם שלכם
+                            </p>
+                            <a class="btn project-btn" href="https://omnifood-moshe.netlify.app/">הראה פרויקט</a>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="project-img" role="img" aria-label="Scores-Icon"></div>
+                        <div class="project-info">
+                            <h1 class="project-name">Scores</h1>
+                            <p class="project-description">
+                                <span>פרויקט גמר &ndash; אפליקציה למובייל</span><br />
+                                אפליקציה בא ניתן לזכות במתנות ובהנחות על ידי ביצוע מטלות ספציפיות במגוון חנויות
+                            </p>
+                            <a class="btn project-btn"
+                               href="https://xd.adobe.com/view/49c1afa2-0f07-4cdc-8545-4fa1f9cde71a-1c92/">
+                                הראה פרויקט</a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <p class="project-title">פוטושופ</p>
+
+                <div class="photoshop-gallery">
+                    <a class="photoshop-link" href="../img/photoshop/Flower.webp">
+                        <img class="photoshop-img" src="../img/photoshop/Preview/Flower.webp"
+                             alt="Flower-Photoshop Work" />
+                        <div class="photoshop-info">
+                            <p class="photoshop-name">פרח</p>
+                        </div>
+                    </a>
+
+                    <a class="photoshop-link" href="../img/photoshop/Mockup.webp">
+                        <img class="photoshop-img" src="../img/photoshop/Preview/Mockup.webp"
+                             alt="Mockup-Photoshop Work" />
+                        <div class="photoshop-info">
+                            <p class="photoshop-name">מוקאפ</p>
+                        </div>
+                    </a>
+
+                    <a class="photoshop-link" href="../img/photoshop/Sports Car.webp">
+                        <img class="photoshop-img" src="../img/photoshop/Preview/Sports Car.webp"
+                             alt="Sports Car-Photoshop Work" />
+                        <div class="photoshop-info">
+                            <p class="photoshop-name">מכונית ספורט</p>
+                        </div>
+                    </a>
+
+                    <a class="photoshop-link" href="../img/photoshop/Double Exposure.webp">
+                        <img class="photoshop-img" src="../img/photoshop/Preview/Double Exposure.webp"
+                             alt="Double Exposure-Photoshop Work" />
+                        <div class="photoshop-info">
+                            <p class="photoshop-name">אפקט חשיפה כפולה</p>
+                        </div>
+                    </a>
+
+                    <a class="photoshop-link" href="../img/photoshop/Anaglyph.webp">
+                        <img class="photoshop-img" src="../img/photoshop/Preview/Anaglyph.webp"
+                             alt="Anaglyph-Photoshop Work" />
+                        <div class="photoshop-info">
+                            <p class="photoshop-name">אנגליף תלת מימד</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h1 class="heading-black">אודות עליי</h1>
+
+            <div class="aboutme">
+                <p class="aboutme-name"> היי, קוראים לי משה ואני מפתח תקווה, ישראל
+                    <br>.ועוסק בעיצוב ממשק משתמש וחווית משתמש
+                </p>
+
+                <p>
+                    אני אוהב לעצב אתרים ואפליקציות למובייל לפי הנוהל הנכון <br />
+                    .שאחד מהנהלים הוא להתמקד בקהל היעד הספציפי שאליו אנו פונים עם המוצר
+                    לכן תמיד שאני מגדיר כל מוצר חדש לקהל היעד, אני חולק את הרעיון שלי עם
+                    העמיתים לעבודה,רק כדי להיות בטוח אם יש משהו שאני יכול להוסיף, להחליף
+                    או להיפך להסיר לפני שאני מתחיל לחקור את הפונקציונליות של המוצר
+                    <br />
+                    <br />
+                    אני אוהב ללמוד בעצמי, בכל מיני דרכים. בין זה דרך קורסים מקצועיים מהאינטרנט או
+                    באמצעות סרטונים קצרים# ביוטיוב, דרכם אני לומד שיטות חדשות על פוטושופ,
+                    פיגמה ועוד המון כלים לעיצוב ממשקים למגוון פלטפורמות
+                    <br />
+                    <br />
+                    כשאני לא מעצב, אני נהנה בזמני הפנוי לשחק במחשב ואוהב להאזין למוזיקה אקלטרונית<br />
+                    :שהאומנים האהובים עליי הם<br>
+                    Gorgon City, Camelphat & David Guetta
+
+                </p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="contact" id="contact">
+            <h1 class="heading-blue">צרו קשר</h1>
+
+            <div class="contactme">
+                <p>?אהבתם את התיק העבודות שלי<br /> .תרגישו חופשי לפנות אליי</p>
+
+                <p class="contact-phone">
+                    <a class="contact-email-link" href="tel:0525501480">052-5501480</a>
+                    <span style="color: var(--tint)">:מספר טלפון</span>
+                </p>
+
+                <p class="contact-email">
+                    <a class="contact-email-link" href="mailto: moshe.mauzkop@gmail.com">moshe.mauzkop@gmail.com</a>
+                    <span style="color: var(--tint)">:כתובת מייל</span>
+                </p>
+
+                <a class="btn contact-btn" href="https://www.linkedin.com/in/moshe-mauzkop-a627a11b7"
+                   title=" כנס לפרופיל שלי בלינקדאין">
+                    <img src="../img/svg/Linkedin-Logo.svg"
+                         style="width: 3.2rem; height: 3.2rem; display: flex; align-items: center; justify-content: center;"
+                         aria-label="LinkedIn-Icon" />
+                </a>
+            </div>
+
+        </section>
+    </footer>
+
+</body>
+
+</html>

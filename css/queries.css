@@ -1,60 +1,86 @@
-/* #region Laptop */
+/*----------------------------
+Media Queries
+----------------------------*/
 
-@media (max-width: 1080px) {
+/* Below 832px (52em) (Small Laptops/Desktops) */
+
+@media (max-width: 52em) {
   html {
     font-size: 56.25%;
   }
 
-  .header,
-  .main-container {
-    padding-inline: 5rem;
+  .header {
+    padding-inline: 4.8rem;
   }
 
-  .left-sticky-links {
-    left: 4rem;
+  .logo:hover,
+  .logo:active {
+    background-image: url("../img/svg/Logo.svg");
   }
 
-  .about--content,
-  .projects--list {
-    padding-inline: 8rem;
+  .projects-list {
+    flex-direction: column;
   }
 
-  .certificates--grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+  .project {
+    width: 65rem;
   }
 
-  .project--details {
-    grid-column: 4 / 9;
+  .project-img {
+    max-width: 50%;
   }
 
-  .project:nth-child(2) .project--details {
-    grid-column: 1 / 6;
+  .project-info {
+    background: none;
+    max-width: 50%;
+    padding-block: 0;
+    padding-inline: 2.4rem;
+    border-left: 2px solid var(--white-borders);
+    border-radius: 0;
+    box-shadow: none;
+    opacity: 1;
+    transform: translateX(100%);
   }
 
-  .photoshop {
-    padding-inline: 8rem;
+  .project-name {
+    font-size: 3.6rem;
   }
 
-  .photoshop--work-description {
-    font-size: var(--font-rg);
-    font-weight: 500;
+  .project-description {
+    color: var(--white);
+    font-size: 1.6rem;
+  }
+
+  .project-description span {
+    font-size: 1.6rem;
+  }
+
+  .project-info .project-btn {
+    color: var(--black);
+    background-color: var(--white);
+  }
+
+  .project-info .project-btn:hover {
+    color: var(--white);
+    background-color: var(--dominant);
+    box-shadow: 0 0 8px 0.25rem var(--hover);
   }
 }
 
-/* #endregion Laptop */
+/* Below 672px (42em) (Tablets) */
 
-/* #region Tablet */
+@media (max-width: 42em) {
 
-@media (max-width: 768px) {
-  .header {
-    justify-content: space-between;
+  .homepage,
+  .skills,
+  .projects,
+  .about,
+  .contact {
+    padding-block: 8rem;
   }
 
-  .top-links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .header {
+    padding-inline: 3.2rem;
   }
 
   .mobile-nav-icons {
@@ -64,23 +90,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 600;
-  }
-
-  .left-sticky-links {
-    display: none;
+    z-index: 300;
   }
 
   .nav-open .nav-bar {
-    background-color: var(--black);
+    background-color: var(--black-overlay);
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     min-height: 100vh;
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
-    z-index: 500;
-    transition: var(--basic);
+    z-index: 200;
+    transition: all 0.5s;
   }
 
   .nav-open .mobile-menu-icon {
@@ -93,10 +115,10 @@
 
   .nav-bar {
     background-color: var(--black);
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,339 +138,157 @@
     font-size: 2.4rem;
   }
 
-  .resume {
-    display: none;
+  #lang-link {
+    gap: 0.8rem;
   }
 
-  .project-mobile {
-    padding-block: 1.2rem;
-    padding-inline: 2rem;
-    font-size: var(--font-sm);
+  #lang-link .iconify {
+    width: 3.2rem;
+    height: 3.2rem;
   }
 
-  .resume-mobile {
-    display: inline-block;
-  }
-
-  .about--content,
-  .projects--list {
-    max-width: 100rem;
-    padding-inline: 0rem;
-    grid-template-columns: 1fr;
-    column-gap: 0;
-  }
-
-  .about--skills-rightside {
-    grid-row: 2 / 3;
-    justify-self: center;
-  }
-
-  .about--image {
-    margin-top: 5rem;
-  }
-
-  .about--skills {
-    align-items: center;
-  }
-
-  .skill--title::after {
-    display: none;
-  }
-
-  .about--certificates {
-    align-items: center;
-  }
-
-  .certificate--overlay {
-    bottom: 0;
-    font-size: var(--font-sm);
-    opacity: 1;
-  }
-
-  .certificate--icon,
-  .certificate--subtitle {
-    display: none;
-  }
-
-  .certificate--logo {
-    width: 4rem;
-  }
-
-  .certificate--name {
-    margin-bottom: 0;
-  }
-
-  .project {
-    margin-bottom: 10rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .project:nth-child(2) {
-    direction: ltr;
-  }
-
-  .project:nth-child(2) .project--btns {
-    flex-direction: row;
-  }
-
-  .project:last-child .project--details {
-    position: static;
-  }
-
-  .project:last-child .project--btns {
-    flex-direction: row;
-  }
-
-  .project:last-child .project--icon-text {
-    font-size: var(--font-rg);
-    display: flex;
-  }
-
-  .project--image {
-    filter: grayscale(0);
-    opacity: 0.04;
-  }
-
-  .project--details {
-    background-color: rgba(25, 29, 39, 0.4);
-    position: absolute;
-    padding-block: 2rem;
-    padding-inline: 5rem;
-    border-radius: 10px;
-    align-items: flex-start;
-  }
-
-  .project--subtitle {
-    margin-bottom: 2rem;
-    font-size: var(--font-rg);
-  }
-
-  .project--title {
-    font-size: clamp(3.6rem, 4.5vw, var(--font-lg));
-  }
-
-  .project--description {
-    background-color: transparent;
-    padding: 0;
-    margin-block: 3rem;
-    box-shadow: none;
-    font-size: var(--font-rg);
-    text-align: start;
-  }
-
-  .project--btns {
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .project--link {
-    font-size: var(--font-rg);
-  }
-
-  .project--icons {
-    display: none;
-  }
-
-  .project--icon-text {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-
-  .photoshop {
-    padding-inline: 0;
-  }
-}
-
-/* #endregion Tablet */
-
-/* #region Small Tablet */
-
-@media (max-width: 600px) {
-
-  .video-overlay {
-    background-color: rgba(25, 29, 39, 0.6);
-    box-shadow: none;
+  .introduce {
+    font-size: 3.6rem;
   }
 
   .profile {
-    margin-bottom: 5rem;
+    margin-block: 0;
+    flex-direction: column;
+  }
+
+  .profile-info {
+    order: 2;
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  .profile-links {
+    gap: 3.2rem;
+  }
+
+  .profile-img {
+    justify-self: center;
+  }
+
+  .certificates-list {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: none;
+  }
+
+  .certificates-list li:nth-child(2) {
+    grid-row: auto
+  }
+
+  .certificates-list li:nth-child(3) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .certificates-list li:nth-child(4) {
+    grid-row: auto
+  }
+
+  .certificates-list li:nth-child(5) {
+    grid-row: auto
   }
 
 
-  .skills--grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    column-gap: 2rem;
-  }
-
-  .certificates--grid {
-    grid-template-columns: repeat(2, 1fr);
+  .project-title {
+    text-align: center;
   }
 
   .project {
-    padding-bottom: 5rem;
-    margin-bottom: 5rem;
-    gap: 3rem;
-  }
-
-  .project:not(:last-child) {
-    border-bottom: 2px solid rgba(100, 190, 255, 0.4);
-  }
-
-  .project--image {
-    opacity: 1;
-  }
-
-  .project--details {
-    background-color: transparent;
-    position: relative;
-    padding: 0;
-    box-shadow: none;
-  }
-
-  .project--icon-text {
+    width: 35rem;
+    height: 40rem;
+    position: static;
     display: flex;
     flex-direction: column;
-    column-gap: 1rem;
-    row-gap: 2rem;
   }
 
-  .project--btns {
-    align-items: flex-end;
+  .project-img {
+    background-size: 20rem;
+    max-width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
   }
 
-  .project--link {
+  .project-info {
+    max-width: 100%;
+    padding: 2.4rem;
+    border-top: 2px solid var(--white-borders);
+    border-left: none;
     position: static;
+    transform: translateX(0);
   }
 
-  .photoshop {
-    padding-inline: 2rem;
+  .project-name {
+    font-size: 3rem;
   }
 
-  .photoshop--list {
+  .project:nth-child(2) .project-img {
+    background-size: 17.5rem;
+  }
+
+  .photoshop-gallery {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 3rem;
+  }
+
+  .photoshop-link {
+    width: 16rem;
+    height: 16rem;
+  }
+
+  .photoshop-link:hover .photoshop-img {
+    transform: none;
   }
 }
 
-/* #endregion Small Tablet */
+/* Below 512px (32em) (Phones) */
 
-/* #region Mobiles */
-
-@media (max-width: 480px) {
-  html {
-    scroll-padding-top: 2rem;
-  }
-
-  .header {
-    padding-inline: 3rem;
-  }
-
-  .main-container {
-    padding-inline: 2rem;
-  }
-
-  .about,
-  .projects,
-  .contact {
-    padding-block: 8rem;
-  }
-
-  .about--content,
-  .projects--list {
-    padding-inline: 2rem;
-  }
-
-  .about--image {
-    width: 30rem;
-    height: 30rem;
-  }
-
-  .certificate--image {
-    width: 15rem;
-  }
-
-  .project:last-child .project--icon-text {
-    row-gap: 3rem;
-  }
-
-  .project--btns {
-    flex-direction: column;
-    align-items: flex-start
-  }
-
-  .project--link {
-    position: static;
-    margin-top: 3rem;
-  }
-
-  .project:nth-child(2) .project--btns {
-    flex-direction: column;
-  }
-
-  .contact-btns {
-    flex-direction: column;
-  }
-}
-
-/* #endregion Mobiles */
-
-/* #region Small Mobiles */
-
-@media (max-width: 320px) {
+@media (max-width: 32em) {
   html {
     font-size: 50%;
   }
 
-  .skills--grid {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(7, 1fr);
+  .introduce {
+    font-size: 2.8rem;
+    margin-block: 0;
+    margin-bottom: 2.4rem;
   }
 
-  .certificates--grid {
+  .skills-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contactme {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 0;
+    grid-template-rows: 0;
+    grid-template-areas: none;
+    gap: 3.2rem;
+  }
+}
+
+/* Below 352px (22em) (Small Phones) */
+
+@media (max-width: 22em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .skills-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .photoshop-gallery {
     grid-template-columns: 1fr;
+    row-gap: 4.8rem;
   }
 
-  .certificate--image {
+  .photoshop-link {
     width: 20rem;
+    height: 20rem;
   }
 }
-
-/* #endregion Small Mobiles */
-
-/* #region (Skill - RightSide--Skill-List) */
-
-@media (min-width: 769px) and (max-width: 880px) {
-
-  .about--content {
-    grid-template-columns: 3fr 2fr;
-  }
-
-  .about--skills-rightside {
-    align-items: flex-start;
-  }
-
-  .about--image {
-    margin-bottom: 5rem;
-    width: 25rem;
-    height: 25rem;
-  }
-
-  .about--skills {
-    display: none;
-  }
-
-  .rightside--skill-list {
-    display: flex;
-  }
-
-  .certificates-title {
-    display: flex;
-  }
-}
-
-/* #endregion (Skill - RightSide--Skill-List) */

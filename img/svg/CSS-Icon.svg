@@ -1,6 +1,54 @@
-<svg width="45" height="50" viewBox="0 0 45 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4.025 45L0 0H44.1667L40.1667 45L22.0833 50L4.025 45Z" fill="#0A6CB2"/>
-<path d="M22.0833 3.7495V46.2495L36.9167 42.2078L40.4167 3.7495H22.0833Z" fill="#2982BF"/>
-<path d="M35.8333 9.58383H8.33334L8.815 15.0288H28.8833L28.4667 20.6038H9.32334L9.80167 26.0488H28.19L27.7733 32.542L22.0833 34.49L15.9 33.1133L15.4933 28.5783H10.1183L10.81 37.3183L22.0833 40.4172L33.3142 37.3188L35.8333 9.58383Z" fill="white"/>
-<path d="M35.8333 9.58383H8.33334L8.815 15.0288H28.8833L28.4667 20.6038H9.32334L9.80167 26.0488H28.19L27.7733 32.542L22.0833 34.49L15.9 33.1133L15.4933 28.5783H10.1183L10.81 37.3183L22.0833 40.4172L33.3142 37.3188L35.8333 9.58383Z" fill="#EBEBEB"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" height="300" viewBox="0 0 300 300">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fafafa;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-CSS);
+      }
+
+      .cls-3 {
+        fill: #0a6cb2;
+      }
+
+      .cls-4 {
+        fill: #2982bf;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-7 {
+        fill: #ebebeb;
+      }
+
+      .cls-8 {
+        fill: rgba(255,255,255,0);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Mask" class="cls-1" width="82.5" height="185" transform="translate(258.627 159.481)"/>
+    </clipPath>
+    <clipPath id="clip-CSS">
+      <rect width="300" height="300"/>
+    </clipPath>
+  </defs>
+  <g id="CSS" class="cls-2">
+    <rect class="cls-8" width="300" height="300"/>
+    <g id="CSS-2" data-name="CSS" transform="translate(-191.127 -101.981)">
+      <path id="CSS-3" data-name="CSS" class="cls-3" d="M232.777,371.981l-24.15-270h265l-24,270-108.5,30Z"/>
+      <path id="CSS-4" data-name="CSS" class="cls-4" d="M1000,234.1v255l89-24.25,21-230.75Z" transform="translate(-658.873 -109.622)"/>
+      <path id="CSS-5" data-name="CSS" class="cls-5" d="M106.5,13h-165l2.89,32.67H64.8L62.3,79.12H-52.56l2.87,32.67H60.64l-2.5,38.959L24,162.437l-37.1-8.26-2.44-27.21H-47.79l4.15,52.44L24,198l67.385-18.59Z" transform="translate(317.127 146.484)"/>
+      <g id="CSS-6" data-name="CSS" class="cls-6">
+        <path id="CSS-7" data-name="CSS" class="cls-7" d="M106.5,13h-165l2.89,32.67H64.8L62.3,79.12H-52.56l2.87,32.67H60.64l-2.5,38.959L24,162.437l-37.1-8.26-2.44-27.21H-47.79l4.15,52.44L24,198l67.385-18.59Z" transform="translate(317.127 146.484)"/>
+      </g>
+    </g>
+  </g>
 </svg>
