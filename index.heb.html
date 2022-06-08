@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>משה מאוזקופ &dash; תיק עבודות </title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/queries.css" />
+  <link rel="icon" href="./img/Favicon.png" />
+  <link rel="apple-touch-icon" href="./img/Apple-Icon.png" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script defer src="./script.js"></script>
+  <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</head>
+
+<body id="homepage">
+
+  <header class="header">
+    <div class="top-links">
+      <a class="top--btn-language" href="./index.html" title="English"
+         onclick="document.documentElement.style.removeProperty('overflow-y');">Eng</a>
+      <a class="top--btn-linkedin" href="https://www.linkedin.com/in/moshe-mauzkop-a627a11b7" role="link"
+         target="_blank"
+         rel="noreferrer"
+         aria-label="LinkedIn">
+        <svg class="linkedin-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.4 23.9995H-9.06146e-10V7.8H5.4V23.9995ZM24 24H19.2V16.2C19.2 14.3411 18.6 12 16.2 12C13.8 12 13.2 14.1107 13.2 16.2V23.9995H8.4V7.8H13.2V10.2C13.8 9 15 7.8 18 7.8C22.8 7.8 24 10.8 24 15V24Z"
+                fill="#FAFAFA" />
+          <path d="M1.21062 4.95205C1.65604 5.24663 2.17881 5.40251 2.71282 5.39997C3.42805 5.39395 4.1119 5.10542 4.61527 4.59727C5.11864 4.08913 5.40071 3.40259 5.39997 2.68733C5.39746 2.15332 5.23666 1.63205 4.93789 1.18943C4.63913 0.746808 4.21582 0.402725 3.72149 0.200691C3.22717 -0.00134379 2.68404 -0.0522558 2.16078 0.0543931C1.63752 0.161042 1.15764 0.420462 0.781822 0.799846C0.406002 1.17923 0.151125 1.66154 0.0494206 2.18578C-0.0522836 2.71002 0.00375357 3.25265 0.210446 3.74504C0.417138 4.23744 0.765202 4.65748 1.21062 4.95205Z"
+                fill="#FAFAFA" />
+        </svg></a>
+    </div>
+    <button class="mobile-nav-icons">
+      <div class="mobile-menu-icon" role="button" aria-label="Menu-Icon"></div>
+      <div class="mobile-close-icon" role="button" aria-label="Close-Icon"></div>
+    </button>
+    <nav class="nav-bar">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="#homepage"
+             onclick="document.documentElement.style.removeProperty('overflow-y');">בית</a></li>
+
+        <li><a class="nav-link" href="#about"
+             onclick="document.documentElement.style.removeProperty('overflow-y');">אודות עליי</a></li>
+
+        <li><a class="nav-link" href="#projects"
+             onclick="document.documentElement.style.removeProperty('overflow-y');">פרויקטים</a></li>
+
+        <li><a class="nav-link" href="#contact"
+             onclick="document.documentElement.style.removeProperty('overflow-y');">צרו קשר</a></li>
+
+        <button class="resume" type="button"
+                onclick="location.assign('https://www.dropbox.com/s/qz9r34947lw6bhr/My%20Resume.pdf?dl=0')">קו"ח</button>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="left-sticky-links">
+    <a class="btn-linkedin" href="https://www.linkedin.com/in/moshe-mauzkop-a627a11b7" role="link" target="_blank"
+       rel="noreferrer"
+       aria-label="LinkedIn">
+      <svg class="linkedin-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+           xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.4 23.9995H-9.06146e-10V7.8H5.4V23.9995ZM24 24H19.2V16.2C19.2 14.3411 18.6 12 16.2 12C13.8 12 13.2 14.1107 13.2 16.2V23.9995H8.4V7.8H13.2V10.2C13.8 9 15 7.8 18 7.8C22.8 7.8 24 10.8 24 15V24Z"
+              fill="#99aecc" />
+        <path d="M1.21062 4.95205C1.65604 5.24663 2.17881 5.40251 2.71282 5.39997C3.42805 5.39395 4.1119 5.10542 4.61527 4.59727C5.11864 4.08913 5.40071 3.40259 5.39997 2.68733C5.39746 2.15332 5.23666 1.63205 4.93789 1.18943C4.63913 0.746808 4.21582 0.402725 3.72149 0.200691C3.22717 -0.00134379 2.68404 -0.0522558 2.16078 0.0543931C1.63752 0.161042 1.15764 0.420462 0.781822 0.799846C0.406002 1.17923 0.151125 1.66154 0.0494206 2.18578C-0.0522836 2.71002 0.00375357 3.25265 0.210446 3.74504C0.417138 4.23744 0.765202 4.65748 1.21062 4.95205Z"
+              fill="#99aecc" />
+      </svg></a>
+    <a class="btn-language" href="./index.html" title="English">Eng</a>
+  </div>
+
+  <div class="portfolio">
+    <main class="main-container">
+      <div class="video-overlay"></div>
+      <video class="video" src="./img/Video.mp4" muted loop poster
+             autoplay></video>
+
+      <section class="homepage" data-aos="fade">
+        <div class="profile">
+          <p class="introduce">ברוכים הבאים, קוראים לי</p>
+          <p class="profile-name">משה מאוזקופ</p>
+          <p class="profile-position">מעצב ממשק וחווית משתמש</p>
+          <p class="profile-description">אוהב לחקור ולעצב דברים חדשים.
+            <br>ומקפיד תמיד על עיצוב בצורה מסודרת, ונקיה.
+          </p>
+          <div class="profile-links">
+            <a class="btn project-mobile" href="#projects">הפרויקטים שלי</a>
+            <button class="resume-mobile" type="button"
+                    onclick="location.assign('https://www.dropbox.com/s/qz9r34947lw6bhr/My%20Resume.pdf?dl=0')">קורות
+              חיים</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about" data-aos="fade" data-aos-offset="300">
+        <h1 class="heading">אודות עליי</h1>
+        <div class="about--content">
+          <div class="about--description">
+            <p>שלום, שמי משה מפתח תקווה,
+              ואני מעצב ממשק וחווית משתמש.
+            </p>
+            <p>אני אוהב לעצב אתרים ואפליקציות למובייל, לפי הכללים.
+              כלומר, שבכל פעם שאני מגדיר משהו חדש ללקוחות, אני משתף את הרעיון שלי עם העמיתים לעבודה, כדי להיות בטוח אם
+              יש משהו שכדאי להוסיף, להחליף או להסיר לפני שאני מתחיל לחקור על המוצר.
+            </p>
+            <p>בנוסף אני אוהב ללמוד בעצמי דברים חדשים. בין אם זה דרך קורסים מקצועיים מהאינטרנט או ללמוד שיטות חדשות
+              בפוטושופ,
+              אקס-די, פיגמה ועוד כלי עיצוב אחרים דרך סרטונים קצרים# מהיוטיוב.</p>
+            <p>בזמן שאני לא מעצב, אני משחק במחשב ואוהב לשמוע למוזיקה שהאומנים האהובים עליי הם:
+              <a class="about--external-links" href="https://www.youtube.com/channel/UCxD2gCy3e0EUWN5EylcBGMA"
+                 role="link" aria-label="Link to 'Gorgon City' Youtube page">Gorgon City</a>
+              <a class="about--external-links" href="https://www.youtube.com/channel/UCpm-eB6U_qtPYYQC7kjlNIA"
+                 role="link" aria-label="Link to 'Camelphat' Youtube page">Camelphat</a> &
+              <a class="about--external-links" href="https://www.youtube.com/channel/UC1l7wYrva1qCH-wgqcHaaRg"
+                 role="link" aria-label="Link to 'David Guetta' Youtube page">David Guetta</a>
+            </p>
+            </p>
+          </div>
+
+          <div class="about--skills-rightside">
+            <img class="about--image" src="./img/Image.webp" alt="Profile-Image" aria-label="Profile-Image">
+            <div class="rightside--skill-list">
+              <p style="color: var(--white); margin-bottom: 2rem; font-size: var(--font-md); font-weight: 500;">
+                כישורים:</p>
+              <div class="rightside--skill">
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.29378 0.300897C4.39308 0.156004 4.60692 0.156004 4.70622 0.300897L6.03676 2.24232C6.06927 2.28976 6.11714 2.32453 6.17229 2.34079L8.42986 3.00628C8.59835 3.05595 8.66443 3.25931 8.55731 3.39853L7.12206 5.26389C7.087 5.30946 7.06872 5.36573 7.0703 5.42321L7.135 7.77593C7.13983 7.95152 6.96684 8.07721 6.80134 8.01836L4.58376 7.22979C4.52958 7.21052 4.47042 7.21052 4.41624 7.22979L2.19866 8.01836C2.03316 8.07721 1.86017 7.95152 1.865 7.77593L1.9297 5.42321C1.93128 5.36573 1.913 5.30946 1.87794 5.26389L0.442691 3.39853C0.335575 3.25931 0.401653 3.05595 0.57014 3.00628L2.82771 2.34079C2.88286 2.32453 2.93073 2.28976 2.96324 2.24232L4.29378 0.300897Z"
+                        fill="#64beff" />
+                </svg>
+                <p style="margin-inline: 1rem; font-size: var(--font-sm) ;">פוטושופ</p>
+              </div>
+              <div class="rightside--skill"> <svg style="display:flex; align-items:center; justify-content: center; "
+                     width="9" height="9" viewBox="0 0 9 9" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.29378 0.300897C4.39308 0.156004 4.60692 0.156004 4.70622 0.300897L6.03676 2.24232C6.06927 2.28976 6.11714 2.32453 6.17229 2.34079L8.42986 3.00628C8.59835 3.05595 8.66443 3.25931 8.55731 3.39853L7.12206 5.26389C7.087 5.30946 7.06872 5.36573 7.0703 5.42321L7.135 7.77593C7.13983 7.95152 6.96684 8.07721 6.80134 8.01836L4.58376 7.22979C4.52958 7.21052 4.47042 7.21052 4.41624 7.22979L2.19866 8.01836C2.03316 8.07721 1.86017 7.95152 1.865 7.77593L1.9297 5.42321C1.93128 5.36573 1.913 5.30946 1.87794 5.26389L0.442691 3.39853C0.335575 3.25931 0.401653 3.05595 0.57014 3.00628L2.82771 2.34079C2.88286 2.32453 2.93073 2.28976 2.96324 2.24232L4.29378 0.300897Z"
+                        fill="#64beff" />
+                </svg>
+                <p style="margin-inline: 1rem; font-size: var(--font-sm) ;">אילוסטרייטור</p>
+              </div>
+              <div class="rightside--skill"> <svg style="display:flex; align-items:center; justify-content: center; "
+                     width="9" height="9" viewBox="0 0 9 9" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.29378 0.300897C4.39308 0.156004 4.60692 0.156004 4.70622 0.300897L6.03676 2.24232C6.06927 2.28976 6.11714 2.32453 6.17229 2.34079L8.42986 3.00628C8.59835 3.05595 8.66443 3.25931 8.55731 3.39853L7.12206 5.26389C7.087 5.30946 7.06872 5.36573 7.0703 5.42321L7.135 7.77593C7.13983 7.95152 6.96684 8.07721 6.80134 8.01836L4.58376 7.22979C4.52958 7.21052 4.47042 7.21052 4.41624 7.22979L2.19866 8.01836C2.03316 8.07721 1.86017 7.95152 1.865 7.77593L1.9297 5.42321C1.93128 5.36573 1.913 5.30946 1.87794 5.26389L0.442691 3.39853C0.335575 3.25931 0.401653 3.05595 0.57014 3.00628L2.82771 2.34079C2.88286 2.32453 2.93073 2.28976 2.96324 2.24232L4.29378 0.300897Z"
+                        fill="#64beff" />
+                </svg>
+                <p style="margin-inline: 1rem; font-size: var(--font-sm) ;">אקס-די</p>
+              </div>
+              <div class="rightside--skill"> <svg style="display:flex; align-items:center; justify-content: center; "
+                     width="9" height="9" viewBox="0 0 9 9" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.29378 0.300897C4.39308 0.156004 4.60692 0.156004 4.70622 0.300897L6.03676 2.24232C6.06927 2.28976 6.11714 2.32453 6.17229 2.34079L8.42986 3.00628C8.59835 3.05595 8.66443 3.25931 8.55731 3.39853L7.12206 5.26389C7.087 5.30946 7.06872 5.36573 7.0703 5.42321L7.135 7.77593C7.13983 7.95152 6.96684 8.07721 6.80134 8.01836L4.58376 7.22979C4.52958 7.21052 4.47042 7.21052 4.41624 7.22979L2.19866 8.01836C2.03316 8.07721 1.86017 7.95152 1.865 7.77593L1.9297 5.42321C1.93128 5.36573 1.913 5.30946 1.87794 5.26389L0.442691 3.39853C0.335575 3.25931 0.401653 3.05595 0.57014 3.00628L2.82771 2.34079C2.88286 2.32453 2.93073 2.28976 2.96324 2.24232L4.29378 0.300897Z"
+                        fill="#64beff" />
+                </svg>
+                <p style="margin-inline: 1rem; font-size: var(--font-sm) ;">HTML</p>
+              </div>
+              <div class="rightside--skill"> <svg style="display:flex; align-items:center; justify-content: center; "
+                     width="9" height="9" viewBox="0 0 9 9" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.29378 0.300897C4.39308 0.156004 4.60692 0.156004 4.70622 0.300897L6.03676 2.24232C6.06927 2.28976 6.11714 2.32453 6.17229 2.34079L8.42986 3.00628C8.59835 3.05595 8.66443 3.25931 8.55731 3.39853L7.12206 5.26389C7.087 5.30946 7.06872 5.36573 7.0703 5.42321L7.135 7.77593C7.13983 7.95152 6.96684 8.07721 6.80134 8.01836L4.58376 7.22979C4.52958 7.21052 4.47042 7.21052 4.41624 7.22979L2.19866 8.01836C2.03316 8.07721 1.86017 7.95152 1.865 7.77593L1.9297 5.42321C1.93128 5.36573 1.913 5.30946 1.87794 5.26389L0.442691 3.39853C0.335575 3.25931 0.401653 3.05595 0.57014 3.00628L2.82771 2.34079C2.88286 2.32453 2.93073 2.28976 2.96324 2.24232L4.29378 0.300897Z"
+                        fill="#64beff" />
+                </svg>
+                <p style="margin-inline: 1rem; font-size: var(--font-sm) ;">CSS</p>
+              </div>
+              <div class="rightside--skill"> <svg style="display:flex; align-items:center; justify-content: center; "
+                     width="9" height="9" viewBox="0 0 9 9" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.29378 0.300897C4.39308 0.156004 4.60692 0.156004 4.70622 0.300897L6.03676 2.24232C6.06927 2.28976 6.11714 2.32453 6.17229 2.34079L8.42986 3.00628C8.59835 3.05595 8.66443 3.25931 8.55731 3.39853L7.12206 5.26389C7.087 5.30946 7.06872 5.36573 7.0703 5.42321L7.135 7.77593C7.13983 7.95152 6.96684 8.07721 6.80134 8.01836L4.58376 7.22979C4.52958 7.21052 4.47042 7.21052 4.41624 7.22979L2.19866 8.01836C2.03316 8.07721 1.86017 7.95152 1.865 7.77593L1.9297 5.42321C1.93128 5.36573 1.913 5.30946 1.87794 5.26389L0.442691 3.39853C0.335575 3.25931 0.401653 3.05595 0.57014 3.00628L2.82771 2.34079C2.88286 2.32453 2.93073 2.28976 2.96324 2.24232L4.29378 0.300897Z"
+                        fill="#64beff" />
+                </svg>
+                <p style="margin-inline: 1rem; font-size: var(--font-sm) ;">פיגמה</p>
+              </div>
+              <div class="rightside--skill"> <svg style="display:flex; align-items:center; justify-content: center; "
+                     width="9" height="9" viewBox="0 0 9 9" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.29378 0.300897C4.39308 0.156004 4.60692 0.156004 4.70622 0.300897L6.03676 2.24232C6.06927 2.28976 6.11714 2.32453 6.17229 2.34079L8.42986 3.00628C8.59835 3.05595 8.66443 3.25931 8.55731 3.39853L7.12206 5.26389C7.087 5.30946 7.06872 5.36573 7.0703 5.42321L7.135 7.77593C7.13983 7.95152 6.96684 8.07721 6.80134 8.01836L4.58376 7.22979C4.52958 7.21052 4.47042 7.21052 4.41624 7.22979L2.19866 8.01836C2.03316 8.07721 1.86017 7.95152 1.865 7.77593L1.9297 5.42321C1.93128 5.36573 1.913 5.30946 1.87794 5.26389L0.442691 3.39853C0.335575 3.25931 0.401653 3.05595 0.57014 3.00628L2.82771 2.34079C2.88286 2.32453 2.93073 2.28976 2.96324 2.24232L4.29378 0.300897Z"
+                        fill="#64beff" />
+                </svg>
+                <p style="margin-inline: 1rem; font-size: var(--font-sm) ;">וויקס</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about--skills">
+            <h2 class="skill--title">כישורים ותעודות</h2>
+            <div class="skills--grid">
+              <div class="skill">
+                <img class="skill--icon" src="./img/svg/Photoshop-Icon.svg" role="img"
+                     alt="Adobe Photoshop-Icon" aria-label="Adobe Photoshop-Icon">
+                <p class="skill--description">פוטושופ</p>
+              </div>
+              <div class="skill">
+                <img class="skill--icon" src="./img/svg/Illustrator-Icon.svg" role="img"
+                     alt="Adobe Illustrator-Icon" aria-label="Illustrator-Icon">
+                <p class="skill--description">אילוסטרייטור</p>
+              </div>
+              <div class="skill">
+                <img class="skill--icon" src="./img/svg/XD-Icon.svg" role="img"
+                     alt="Adobe XD-Icon" aria-label="Adobe XD-Icon">
+                <p class="skill--description">אקס-די</p>
+              </div>
+              <div class="skill">
+                <img class="skill--icon" src="./img/svg/HTML-Icon.svg" role="img"
+                     alt="HTML-Icon" aria-label="HTML-Icon">
+                <p class="skill--description">HTML</p>
+              </div>
+              <div class="skill">
+                <img class="skill--icon" src="./img/svg/CSS-Icon.svg" role="img"
+                     alt="CSS-Icon" aria-label="CSS-Icon">
+                <p class="skill--description">CSS</p>
+              </div>
+              <div class="skill">
+                <img class="skill--icon" src="./img/svg/Figma-Icon.svg" role="img"
+                     alt="Figma-Icon" aria-label="Figma-Icon">
+                <p class="skill--description">פיגמה</p>
+              </div>
+              <div class="skill">
+                <img class="skill--icon" src="./img/svg/Wix-Icon.svg" role="img"
+                     alt="Wix-Icon" aria-label="Wix-Icon">
+                <p class="skill--description">וויקס</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about--certificates">
+            <h2 class="certificates-title">תעודות</h2>
+            <div class="certificates--grid">
+
+              <button class="certificate--btn" role="link"
+                      onclick="location.assign('./img/certificates/Netcraft.pdf')">
+                <img class="certificate--image" src="./img/certificates/Netcraft.webp" alt="Netcraft-Certificate Image"
+                     aria-label="Netcraft-Certificate Image">
+                <div class="certificate--overlay">
+                  <div class="certificate--description">
+                    <div class="certificate--icon" title="לינק חיצוני"><svg width="20" height="20" viewBox="0 0 20 20"
+                           fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.6667 17.7778H3.33333C2.72222 17.7778 2.22222 17.2778 2.22222 16.6667V3.33333C2.22222 2.72222 2.72222 2.22222 3.33333 2.22222H8.88889C9.5 2.22222 10 1.72222 10 1.11111C10 0.5 9.5 0 8.88889 0H2.22222C0.988889 0 0 1 0 2.22222V17.7778C0 19 1 20 2.22222 20H17.7778C19 20 20 19 20 17.7778V11.1111C20 10.5 19.5 10 18.8889 10C18.2778 10 17.7778 10.5 17.7778 11.1111V16.6667C17.7778 17.2778 17.2778 17.7778 16.6667 17.7778ZM12.2222 1.11111C12.2222 1.72222 12.7222 2.22222 13.3333 2.22222H16.2111L6.06667 12.3667C5.63333 12.8 5.63333 13.5 6.06667 13.9333C6.5 14.3667 7.2 14.3667 7.63333 13.9333L17.7778 3.78889V6.66667C17.7778 7.27778 18.2778 7.77778 18.8889 7.77778C19.5 7.77778 20 7.27778 20 6.66667V1.11111C20 0.5 19.5 0 18.8889 0H13.3333C12.7222 0 12.2222 0.5 12.2222 1.11111Z"
+                              fill="#FAFAFA" />
+                      </svg>
+                    </div>
+                    <div class="certificate--logo">
+                      <svg width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.707106 9.29289L9.29289 0.707107C9.68342 0.316583 10.3166 0.316582 10.7071 0.707106L19.2929 9.29289C19.6834 9.68342 20.3166 9.68342 20.7071 9.29289L29.2929 0.707107C29.6834 0.316583 30.3166 0.316582 30.7071 0.707106L39.2929 9.29289C39.6834 9.68342 39.6834 10.3166 39.2929 10.7071L20.7071 29.2929C20.3166 29.6834 19.6834 29.6834 19.2929 29.2929L0.707107 10.7071C0.316582 10.3166 0.316582 9.68342 0.707106 9.29289Z"
+                              fill="#64beff" />
+                      </svg>
+                    </div>
+                    <p class="certificate--name">נאטקרפט אקדמי</p>
+                    <p class="certificate--subtitle">תעדות פרויקט גמר</p>
+                  </div>
+                </div>
+              </button>
+
+              <button class="certificate--btn" role="link"
+                      onclick="location.assign('https://www.udemy.com/certificate/UC-1a6b9a9e-23f4-4c21-affb-f2aecbac9709/')">
+                <img class="certificate--image" src="./img/certificates/Photoshop Essentials.webp"
+                     alt="Photoshop Essentials-Certificate Image"
+                     aria-label="Photoshop Essentials-Certificate Image">
+                <div class="certificate--overlay">
+                  <div class="certificate--description">
+                    <div class="certificate--icon" title="לינק חיצוני"><svg width="20" height="20" viewBox="0 0 20 20"
+                           fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.6667 17.7778H3.33333C2.72222 17.7778 2.22222 17.2778 2.22222 16.6667V3.33333C2.22222 2.72222 2.72222 2.22222 3.33333 2.22222H8.88889C9.5 2.22222 10 1.72222 10 1.11111C10 0.5 9.5 0 8.88889 0H2.22222C0.988889 0 0 1 0 2.22222V17.7778C0 19 1 20 2.22222 20H17.7778C19 20 20 19 20 17.7778V11.1111C20 10.5 19.5 10 18.8889 10C18.2778 10 17.7778 10.5 17.7778 11.1111V16.6667C17.7778 17.2778 17.2778 17.7778 16.6667 17.7778ZM12.2222 1.11111C12.2222 1.72222 12.7222 2.22222 13.3333 2.22222H16.2111L6.06667 12.3667C5.63333 12.8 5.63333 13.5 6.06667 13.9333C6.5 14.3667 7.2 14.3667 7.63333 13.9333L17.7778 3.78889V6.66667C17.7778 7.27778 18.2778 7.77778 18.8889 7.77778C19.5 7.77778 20 7.27778 20 6.66667V1.11111C20 0.5 19.5 0 18.8889 0H13.3333C12.7222 0 12.2222 0.5 12.2222 1.11111Z"
+                              fill="#FAFAFA" />
+                      </svg></div>
+                    <div class="certificate--logo">
+                      <svg width="20" height="40" viewBox="0 0 20 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0L0 6V12L10 6L20 12V6L10 0ZM0 17V30.5C0 32.9706 0.5 36 2.5 37.5C4.5 39 6.5 40 10 40C13.5 40 15.5 39 17.5 37.5C19.5 36 20 33 20 30.5V17H15V29.9967C15 33 12.5 35 10 35C7.5 35 5 33.0033 5 30V17H0Z"
+                              fill="#64beff" />
+                      </svg>
+                    </div>
+                    <p class="certificate--name">פוטושופ - בסיסי</p>
+                    <p class="certificate--subtitle">תעודת קורס יודמי</p>
+                  </div>
+                </div>
+              </button>
+
+              <button class="certificate--btn" role="link"
+                      onclick="location.assign('https://www.udemy.com/certificate/UC-cb80ef79-0cf8-4a88-8adb-1fcdb26fbe6d/')">
+                <img class="certificate--image" src="./img/certificates/Photoshop Advanced.webp"
+                     alt="Photoshop Advanced-Certificate Image"
+                     aria-label="Photoshop Advanced-Certificate Image">
+                <div class="certificate--overlay">
+                  <div class="certificate--description">
+                    <div class="certificate--icon" title="לינק חיצוני"><svg width="20" height="20" viewBox="0 0 20 20"
+                           fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.6667 17.7778H3.33333C2.72222 17.7778 2.22222 17.2778 2.22222 16.6667V3.33333C2.22222 2.72222 2.72222 2.22222 3.33333 2.22222H8.88889C9.5 2.22222 10 1.72222 10 1.11111C10 0.5 9.5 0 8.88889 0H2.22222C0.988889 0 0 1 0 2.22222V17.7778C0 19 1 20 2.22222 20H17.7778C19 20 20 19 20 17.7778V11.1111C20 10.5 19.5 10 18.8889 10C18.2778 10 17.7778 10.5 17.7778 11.1111V16.6667C17.7778 17.2778 17.2778 17.7778 16.6667 17.7778ZM12.2222 1.11111C12.2222 1.72222 12.7222 2.22222 13.3333 2.22222H16.2111L6.06667 12.3667C5.63333 12.8 5.63333 13.5 6.06667 13.9333C6.5 14.3667 7.2 14.3667 7.63333 13.9333L17.7778 3.78889V6.66667C17.7778 7.27778 18.2778 7.77778 18.8889 7.77778C19.5 7.77778 20 7.27778 20 6.66667V1.11111C20 0.5 19.5 0 18.8889 0H13.3333C12.7222 0 12.2222 0.5 12.2222 1.11111Z"
+                              fill="#FAFAFA" />
+                      </svg></div>
+                    <div class="certificate--logo">
+                      <svg width="20" height="40" viewBox="0 0 20 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0L0 6V12L10 6L20 12V6L10 0ZM0 17V30.5C0 32.9706 0.5 36 2.5 37.5C4.5 39 6.5 40 10 40C13.5 40 15.5 39 17.5 37.5C19.5 36 20 33 20 30.5V17H15V29.9967C15 33 12.5 35 10 35C7.5 35 5 33.0033 5 30V17H0Z"
+                              fill="#64beff" />
+                      </svg>
+                    </div>
+                    <p class="certificate--name">פוטושופ - מתקדם</p>
+                    <p class="certificate--subtitle">תעודת קורס יודמי</p>
+                  </div>
+                </div>
+              </button>
+
+              <button class="certificate--btn" role="link"
+                      onclick="location.assign('https://www.udemy.com/certificate/UC-be706e1b-1c78-4063-8571-a13849c2c437/')">
+                <img class="certificate--image" src="./img/certificates/Responsive Websites.webp"
+                     alt="Responsive Websites-Certificate Image"
+                     aria-label="Responsive Websites-Certificate Image">
+                <div class="certificate--overlay">
+                  <div class="certificate--description">
+                    <div class="certificate--icon" title="לינק חיצוני">
+                      <svg width="20" height="20" viewBox="0 0 20 20"
+                           fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.6667 17.7778H3.33333C2.72222 17.7778 2.22222 17.2778 2.22222 16.6667V3.33333C2.22222 2.72222 2.72222 2.22222 3.33333 2.22222H8.88889C9.5 2.22222 10 1.72222 10 1.11111C10 0.5 9.5 0 8.88889 0H2.22222C0.988889 0 0 1 0 2.22222V17.7778C0 19 1 20 2.22222 20H17.7778C19 20 20 19 20 17.7778V11.1111C20 10.5 19.5 10 18.8889 10C18.2778 10 17.7778 10.5 17.7778 11.1111V16.6667C17.7778 17.2778 17.2778 17.7778 16.6667 17.7778ZM12.2222 1.11111C12.2222 1.72222 12.7222 2.22222 13.3333 2.22222H16.2111L6.06667 12.3667C5.63333 12.8 5.63333 13.5 6.06667 13.9333C6.5 14.3667 7.2 14.3667 7.63333 13.9333L17.7778 3.78889V6.66667C17.7778 7.27778 18.2778 7.77778 18.8889 7.77778C19.5 7.77778 20 7.27778 20 6.66667V1.11111C20 0.5 19.5 0 18.8889 0H13.3333C12.7222 0 12.2222 0.5 12.2222 1.11111Z"
+                              fill="#FAFAFA" />
+                      </svg>
+                    </div>
+                    <div class="certificate--logo">
+                      <svg width="20" height="40" viewBox="0 0 20 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0L0 6V12L10 6L20 12V6L10 0ZM0 17V30.5C0 32.9706 0.5 36 2.5 37.5C4.5 39 6.5 40 10 40C13.5 40 15.5 39 17.5 37.5C19.5 36 20 33 20 30.5V17H15V29.9967C15 33 12.5 35 10 35C7.5 35 5 33.0033 5 30V17H0Z"
+                              fill="#64beff" />
+                      </svg>
+                    </div>
+                    <p class="certificate--name">קורס בניית אתרים רספונסיבים</p>
+                    <p class="certificate--subtitle">תעודת קורס יודמי</p>
+                  </div>
+                </div>
+              </button>
+
+              <button class="certificate--btn" role="link"
+                      onclick="location.assign('https://www.udemy.com/certificate/UC-a4d4b67c-8609-419e-9bd5-def5df9ae081/')">
+                <img class="certificate--image" src="./img/certificates/Figma UXUI Design.webp"
+                     alt="Figma UX/UI Design-Certificate Image"
+                     aria-label="Figma UX/UI Design-Certificate Image">
+                <div class="certificate--overlay">
+                  <div class="certificate--description">
+                    <div class="certificate--icon" title="לינק חיצוני"><svg width="20" height="20" viewBox="0 0 20 20"
+                           fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.6667 17.7778H3.33333C2.72222 17.7778 2.22222 17.2778 2.22222 16.6667V3.33333C2.22222 2.72222 2.72222 2.22222 3.33333 2.22222H8.88889C9.5 2.22222 10 1.72222 10 1.11111C10 0.5 9.5 0 8.88889 0H2.22222C0.988889 0 0 1 0 2.22222V17.7778C0 19 1 20 2.22222 20H17.7778C19 20 20 19 20 17.7778V11.1111C20 10.5 19.5 10 18.8889 10C18.2778 10 17.7778 10.5 17.7778 11.1111V16.6667C17.7778 17.2778 17.2778 17.7778 16.6667 17.7778ZM12.2222 1.11111C12.2222 1.72222 12.7222 2.22222 13.3333 2.22222H16.2111L6.06667 12.3667C5.63333 12.8 5.63333 13.5 6.06667 13.9333C6.5 14.3667 7.2 14.3667 7.63333 13.9333L17.7778 3.78889V6.66667C17.7778 7.27778 18.2778 7.77778 18.8889 7.77778C19.5 7.77778 20 7.27778 20 6.66667V1.11111C20 0.5 19.5 0 18.8889 0H13.3333C12.7222 0 12.2222 0.5 12.2222 1.11111Z"
+                              fill="#FAFAFA" />
+                      </svg></div>
+                    <div class="certificate--logo">
+                      <svg width="20" height="40" viewBox="0 0 20 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0L0 6V12L10 6L20 12V6L10 0ZM0 17V30.5C0 32.9706 0.5 36 2.5 37.5C4.5 39 6.5 40 10 40C13.5 40 15.5 39 17.5 37.5C19.5 36 20 33 20 30.5V17H15V29.9967C15 33 12.5 35 10 35C7.5 35 5 33.0033 5 30V17H0Z"
+                              fill="#64beff" />
+                      </svg>
+                    </div>
+                    <p class="certificate--name">קורס פיגמה ועיצוב ממשקים</p>
+                    <p class="certificate--subtitle">תעודת קורס יודמי</p>
+                  </div>
+                </div>
+              </button>
+
+            </div>
+          </div>
+      </section>
+
+      <section class="projects" id="projects" data-aos="fade" data-aos-offset="400">
+        <h1 class="heading">פרויקטים</h1>
+        <ul class="projects--list">
+
+          <li class="project">
+            <img class="project--image" id="omnifood" src="./img/projects/Omnifood.webp"
+                 alt="Omnifood-Image">
+
+            <div class="project--details">
+              <h2 class="project--subtitle">פרויקט #1</h2>
+              <h1 class="project--title">Omnifood</h1>
+              <p class="project--description">
+                לעולם לא תבזבז את הזמן על מה לאכול!<br>
+                קבל ארוחות בריאות עד הדלת בכל יום.<br>
+                תוכנית ארוחות השבועית נוצרת ע"י בינה מלאכותית.
+              </p>
+              <div class="project--btns">
+                <div class="project--icons">
+                  <div class="project--icon" title="חוצה פלטפורמות">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.5537 15.4415L11.1098 10.9976V7.46467C12.6096 6.92029 13.6206 5.36492 13.2539 3.62069C12.9762 2.30974 11.8874 1.26542 10.5654 1.04323C8.47675 0.698823 6.66586 2.29863 6.66586 4.33172C6.66586 5.77598 7.59908 6.99806 8.88781 7.46467V10.9976L4.44391 15.4415H1.11098C0.499939 15.4415 0 15.9414 0 16.5525V19.8854C0 20.4964 0.499939 20.9964 1.11098 20.9964H4.44391C5.05494 20.9964 5.55488 20.4964 5.55488 19.8854V17.6079L9.99879 12.9418L14.4427 17.6079V19.8854C14.4427 20.4964 14.9426 20.9964 15.5537 20.9964H18.8866C19.4976 20.9964 19.9976 20.4964 19.9976 19.8854V16.5525C19.9976 15.9414 19.4976 15.4415 18.8866 15.4415H15.5537Z"
+                            fill="#99AECC" />
+                    </svg>
+                  </div>
+                  <div class="project--icon" title="אתר אי-קומרס">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.4064 9.41235L10.578 0.580145C10.2081 0.210052 9.69818 0 9.16828 0H1.99962C0.899831 0 0 0.900225 0 2.0005V9.17229C0 9.70243 0.20996 10.2126 0.589889 10.5826L9.41823 19.4149C10.1981 20.195 11.4678 20.195 12.2477 19.4149L19.4164 12.2431C20.1962 11.4629 20.1962 10.2026 19.4064 9.41235ZM4.49916 6.0015C3.66931 6.0015 2.99944 5.33133 2.99944 4.50113C2.99944 3.67092 3.66931 3.00075 4.49916 3.00075C5.329 3.00075 5.99887 3.67092 5.99887 4.50113C5.99887 5.33133 5.329 6.0015 4.49916 6.0015Z"
+                            fill="#99AECC" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="project--icon-text">
+                  <p>&#8226; חוצה פלטפורמות</p>
+                  <p>&#8226; אתר אי קומרס</p>
+                </div>
+                <a class="btn project--link" id="omniLink" target="_blank" href="https://omnifood-moshe.netlify.app/"
+                   role="button">הראה פרויקט</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="project">
+            <img class="project--image" id="scores" src="./img/projects/Scores.webp"
+                 alt="Omnifood-Image">
+            <div class="project--details">
+              <h2 class="project--subtitle">פרויקט #2</h2>
+              <h1 class="project--title">Scores</h1>
+              <p class="project--description">
+                קנה יותר כדי להרוויח יותר!<br>
+                הרעיון של האפליקציה הוא לקבל מבצעים ע"י <br>
+                ביצוע מטלות ספציפיות במגוון חנויות.
+
+              </p>
+              <div class="project--btns">
+                <div class="project--icons">
+                  <div class="project--icon" title="אדובי אקס-די">
+                    <svg width="40" height="28" viewBox="0 0 40 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M32.5679 27.4986C30.8796 27.5256 29.2077 27.1663 27.6827 26.4486C26.2449 25.7529 25.0501 24.6477 24.251 23.275C23.4087 21.8512 23.0011 20.0777 23.0011 17.954C22.9753 16.2334 23.4062 14.5362 24.251 13.0322C25.101 11.5242 26.3498 10.2739 27.8634 9.41566C29.4555 8.50413 31.3642 8.06312 33.6131 8.06312C33.773 8.06186 33.9328 8.06979 34.0917 8.08671C34.2955 8.11047 34.5229 8.11047 34.7958 8.13225V0.758673C34.7958 0.594692 34.8631 0.501811 35.0233 0.501811H39.6356C39.6872 0.494917 39.7396 0.507859 39.7819 0.537991C39.8241 0.568123 39.8532 0.613142 39.863 0.663813V22.9323C39.863 23.3515 39.8867 23.8181 39.9087 24.3322C39.9307 24.8463 39.9778 25.2892 39.9996 25.6847C40.0032 25.761 39.9834 25.8368 39.9428 25.9018C39.9021 25.967 39.8427 26.0184 39.7721 26.0494C38.5851 26.5631 37.3421 26.9388 36.0676 27.1686C34.9136 27.3841 33.7422 27.4944 32.5679 27.4986ZM34.7951 22.8321V12.5637C34.5931 12.5146 34.3875 12.4762 34.1818 12.4471C33.9308 12.4251 33.6815 12.4015 33.4304 12.4015C32.5348 12.3904 31.6503 12.599 30.8558 13.0085C30.076 13.4095 29.4132 14.0021 28.9308 14.7293C28.4323 15.4767 28.1812 16.4793 28.1812 17.6934C28.1609 18.5109 28.2921 19.3253 28.5687 20.0959C28.7848 20.7147 29.1337 21.2799 29.5913 21.7528C30.0251 22.1801 30.5546 22.4999 31.1367 22.6862C31.7443 22.8904 32.3819 22.9926 33.0235 22.9888C33.3639 22.9888 33.6822 22.9651 33.9769 22.9431C34.2549 22.9629 34.534 22.9231 34.7951 22.8265V22.8321Z"
+                            fill="#99AECC" />
+                      <path d="M20.4936 3.8436L13.7553 15.1446L20.9479 27.1277C20.9948 27.2107 21.0108 27.3073 20.9928 27.4006C20.9713 27.4916 20.8814 27.4237 20.7465 27.447H15.6039C15.2443 27.447 14.9979 27.4237 14.8398 27.1956C14.3686 26.2355 13.8739 25.3016 13.4011 24.3423C12.9282 23.3829 12.412 22.4483 11.8724 21.4658C11.3329 20.4833 10.7935 19.5041 10.254 18.4983H10.2091C9.73791 19.4809 9.22181 20.4599 8.70391 21.4425C8.18601 22.4251 7.67153 23.4042 7.17706 24.3654C6.68259 25.3265 6.14125 26.3127 5.61975 27.2418C5.52961 27.4701 5.34935 27.4907 5.10365 27.4907H0.165452C0.0753193 27.4907 0.00898157 27.537 0.00898157 27.4228C-0.00141975 27.3803 -0.00280763 27.3362 0.00492576 27.2932C0.0126411 27.25 0.0293156 27.2091 0.0538678 27.1727L7.03916 15.5315L0.233773 3.82227C0.165452 3.72946 0.14364 3.64447 0.188887 3.59398C0.215494 3.56122 0.250015 3.53556 0.289294 3.51938C0.328574 3.50319 0.371334 3.497 0.413678 3.50135H5.51177C5.6182 3.50416 5.72387 3.51968 5.82651 3.54758C5.91652 3.59791 5.99345 3.66814 6.0513 3.75275C6.47745 4.7354 6.9721 5.71431 7.49 6.69694C8.0079 7.67958 8.54563 8.63716 9.10842 9.59669C9.67121 10.5562 10.1424 11.5136 10.6136 12.4963H10.6551C11.1261 11.4905 11.6208 10.5096 12.1153 9.55029C12.6097 8.59094 13.126 7.63318 13.6421 6.6756C14.1582 5.71804 14.6527 4.73557 15.1511 3.79915C15.1661 3.70923 15.214 3.62791 15.2861 3.57087C15.3743 3.52105 15.4779 3.50455 15.5774 3.52447H20.3184C20.3447 3.5188 20.372 3.5183 20.3986 3.52303C20.4251 3.52776 20.4505 3.53761 20.4731 3.55201C20.4958 3.56641 20.5154 3.58508 20.5308 3.60696C20.5461 3.62883 20.5569 3.65349 20.5627 3.6795V3.68146C20.5861 3.70457 20.541 3.7956 20.4962 3.84004L20.4936 3.8436Z"
+                            fill="#99AECC" />
+                    </svg>
+                  </div>
+                  <div class="project--icon" title="אתר אי-קומרס">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.4064 9.41235L10.578 0.580145C10.2081 0.210052 9.69818 0 9.16828 0H1.99962C0.899831 0 0 0.900225 0 2.0005V9.17229C0 9.70243 0.20996 10.2126 0.589889 10.5826L9.41823 19.4149C10.1981 20.195 11.4678 20.195 12.2477 19.4149L19.4164 12.2431C20.1962 11.4629 20.1962 10.2026 19.4064 9.41235ZM4.49916 6.0015C3.66931 6.0015 2.99944 5.33133 2.99944 4.50113C2.99944 3.67092 3.66931 3.00075 4.49916 3.00075C5.329 3.00075 5.99887 3.67092 5.99887 4.50113C5.99887 5.33133 5.329 6.0015 4.49916 6.0015Z"
+                            fill="#99AECC" />
+                    </svg>
+                  </div>
+                  <div class="project--icon" title="יישומון לפאלפון">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M27 0H13C10 0 8 2 8 5V35C8 38.1818 10 40 13 40H27C30 40 32 38 32 35V5C32 2 30 0 27 0ZM20 38.5C18.5 38.5 17 37.5 17 35.5C17 33.5 18.5 32.5 20 32.5C21.5 32.5 23 33.5 23 35.5C23 37.5 21.5 38.5 20 38.5ZM28 31H12V5H28V31Z"
+                            fill="#99AECC" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="project--icon-text">
+                  <p>יישומון לפאלפון &#8226;</p>
+                  <p>אתר אי-קומרס &#8226;</p>
+                  <p>אדובי אקס-די &#8226; </p>
+                </div>
+                <a class="btn project--link" id="scoresLink" target="_blank"
+                   href="https://xd.adobe.com/view/49c1afa2-0f07-4cdc-8545-4fa1f9cde71a-1c92/"
+                   role="button">הראה פרויקט</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="project">
+            <div class="project--details">
+              <h2 class="project--subtitle">פרויקט #3</h2>
+              <h1 class="project--title">Mediasteel</h1>
+              <p class="project--description">
+                "מדיהסטיל" הוא אבטיפוס של נגן מוזיקה<br>
+                זמינה רק למכשירים ניידים.
+              </p>
+              <div class="project--btns">
+                <div class="project--icons">
+                  <div class="project--icon" title="יישומון לפאלפון">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M27 0H13C10 0 8 2 8 5V35C8 38.1818 10 40 13 40H27C30 40 32 38 32 35V5C32 2 30 0 27 0ZM20 38.5C18.5 38.5 17 37.5 17 35.5C17 33.5 18.5 32.5 20 32.5C21.5 32.5 23 33.5 23 35.5C23 37.5 21.5 38.5 20 38.5ZM28 31H12V5H28V31Z"
+                            fill="#99AECC" />
+                    </svg>
+                  </div>
+                  <div class="project--icon" title="בידור">
+                    <svg width="19" height="30" viewBox="0 0 19 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.125 0V17.625C9 16.875 7.875 16.5 6.75 16.5C3 16.5 0 19.5 0 23.25C0 27 3.06667 30 6.75 30C10.4333 30 13.5 27 13.5 23.25L13.3125 6.75H18.75V0H10.125Z"
+                            fill="#99AECC" />
+                    </svg>
+                  </div>
+                  <div class="project--icon" title="פיגמה">
+                    <svg width="20" height="28" viewBox="0 0 20 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 9H5C3.52941 9 2.35294 8.71875 1.47059 7.875C0.588235 7.03125 0 5.90625 0 4.5C0 3.09375 0.588235 1.96875 1.47059 1.125C2.35294 0.281253 3.52941 0 5 0H10V9Z"
+                            fill="#617694" />
+                      <path d="M10 18H5C3.52941 18 2.35294 17.7187 1.47059 16.875C0.588235 16.0313 0 14.9062 0 13.5C0 12.0938 0.588235 10.9687 1.47059 10.125C2.35294 9.28125 3.52941 9 5 9H10V18Z"
+                            fill="#617694" />
+                      <path d="M14.5 18C17.0312 18 19 16.0312 19 13.5C19 10.9687 17.0312 9 14.5 9C11.9687 9 10 10.9687 10 13.5C10 16.0312 11.9687 18 14.5 18Z"
+                            fill="#8196B4" />
+                      <path d="M10 9H15C16.4706 9 17.6471 8.71875 18.5294 7.875C19.4118 7.03125 20 5.90625 20 4.5C20 3.09375 19.4118 1.96875 18.5294 1.125C17.6471 0.281253 16.4706 0 15 0H10V9Z"
+                            fill="#8499B7" />
+                      <path d="M10 23C10 25.7614 7.76142 28 5 28C2.23858 28 0 25.7614 0 23C0 20.2386 2.23858 18 5 18C5.78232 18 10 18 10 18V20C10 20 10 21.8742 10 23Z"
+                            fill="#879CBA" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="project--icon-text">
+                  <p>&#8226; יישומון לפאלפון</p>
+                  <p>&#8226; בידור</p>
+                  <p>&#8226; פיגמה</p>
+                </div>
+                <a class="project--link-ext" target="_blank" title="לינק חיצוני"
+                   href="https://www.figma.com/file/VtXACVp2nS8SIOFQDXiKF0/Media-Player?node-id=14%3A699"
+                   role="button">
+                  <svg width="20" height="20" viewBox="0 0 20 20"
+                       fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.6667 17.7778H3.33333C2.72222 17.7778 2.22222 17.2778 2.22222 16.6667V3.33333C2.22222 2.72222 2.72222 2.22222 3.33333 2.22222H8.88889C9.5 2.22222 10 1.72222 10 1.11111C10 0.5 9.5 0 8.88889 0H2.22222C0.988889 0 0 1 0 2.22222V17.7778C0 19 1 20 2.22222 20H17.7778C19 20 20 19 20 17.7778V11.1111C20 10.5 19.5 10 18.8889 10C18.2778 10 17.7778 10.5 17.7778 11.1111V16.6667C17.7778 17.2778 17.2778 17.7778 16.6667 17.7778ZM12.2222 1.11111C12.2222 1.72222 12.7222 2.22222 13.3333 2.22222H16.2111L6.06667 12.3667C5.63333 12.8 5.63333 13.5 6.06667 13.9333C6.5 14.3667 7.2 14.3667 7.63333 13.9333L17.7778 3.78889V6.66667C17.7778 7.27778 18.2778 7.77778 18.8889 7.77778C19.5 7.77778 20 7.27778 20 6.66667V1.11111C20 0.5 19.5 0 18.8889 0H13.3333C12.7222 0 12.2222 0.5 12.2222 1.11111Z"
+                          fill="#64beff" />
+                  </svg></a>
+              </div>
+            </div>
+
+            <div class="project--details">
+              <h2 class="project--subtitle">פרויקט #4</h2>
+              <h1 class="project--title">פורטפוליו</h1>
+              <p class="project--description">
+                הפורטפוליו נוצר ועוצב בעצמי.<br>
+                מכיל: HTML, CSS, JS
+              </p>
+              <div class="project--btns">
+                <div class="project--icons">
+                  <div class="project--icon" title="חוצה פלטפורמות">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M15.5537 15.4415L11.1098 10.9976V7.46467C12.6096 6.92029 13.6206 5.36492 13.2539 3.62069C12.9762 2.30974 11.8874 1.26542 10.5654 1.04323C8.47675 0.698823 6.66586 2.29863 6.66586 4.33172C6.66586 5.77598 7.59908 6.99806 8.88781 7.46467V10.9976L4.44391 15.4415H1.11098C0.499939 15.4415 0 15.9414 0 16.5525V19.8854C0 20.4964 0.499939 20.9964 1.11098 20.9964H4.44391C5.05494 20.9964 5.55488 20.4964 5.55488 19.8854V17.6079L9.99879 12.9418L14.4427 17.6079V19.8854C14.4427 20.4964 14.9426 20.9964 15.5537 20.9964H18.8866C19.4976 20.9964 19.9976 20.4964 19.9976 19.8854V16.5525C19.9976 15.9414 19.4976 15.4415 18.8866 15.4415H15.5537Z"
+                            fill="#99AECC" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="project--icon-text">
+                  <p>&#8226; חוצה פלטפורמות</p>
+                </div>
+                <a class="project--link-ext" title="לינק חיצוני"
+                   style="visibility:hidden ; opacity: 0;"
+                   href="#"
+                   role="button">
+                  <svg width="20" height="20" viewBox="0 0 20 20"
+                       fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.6667 17.7778H3.33333C2.72222 17.7778 2.22222 17.2778 2.22222 16.6667V3.33333C2.22222 2.72222 2.72222 2.22222 3.33333 2.22222H8.88889C9.5 2.22222 10 1.72222 10 1.11111C10 0.5 9.5 0 8.88889 0H2.22222C0.988889 0 0 1 0 2.22222V17.7778C0 19 1 20 2.22222 20H17.7778C19 20 20 19 20 17.7778V11.1111C20 10.5 19.5 10 18.8889 10C18.2778 10 17.7778 10.5 17.7778 11.1111V16.6667C17.7778 17.2778 17.2778 17.7778 16.6667 17.7778ZM12.2222 1.11111C12.2222 1.72222 12.7222 2.22222 13.3333 2.22222H16.2111L6.06667 12.3667C5.63333 12.8 5.63333 13.5 6.06667 13.9333C6.5 14.3667 7.2 14.3667 7.63333 13.9333L17.7778 3.78889V6.66667C17.7778 7.27778 18.2778 7.77778 18.8889 7.77778C19.5 7.77778 20 7.27778 20 6.66667V1.11111C20 0.5 19.5 0 18.8889 0H13.3333C12.7222 0 12.2222 0.5 12.2222 1.11111Z"
+                          fill="#64beff" />
+                  </svg></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="photoshop">
+          <h2 class="photoshop-title">פוטושופ</h2>
+          <ul class="photoshop--list">
+            <li>
+              <a class="photoshop--work" href="./img/photoshop/Sports Car.webp" target="_blank">
+                <img class="photoshop--work-image" src="./img/photoshop/Preview/Sports Car.webp"
+                     alt="Sports Car-Photoshop Work">
+                <div class="photoshop--work-info">
+                  <p class="photoshop--work-description">מכונית ספורט</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="photoshop--work" href="./img/photoshop/Double Exposure.webp" target="_blank">
+                <img class="photoshop--work-image" src="./img/photoshop/Preview/Double Exposure.webp"
+                     alt="Double Exposure-Photoshop Work">
+                <div class="photoshop--work-info">
+                  <p class="photoshop--work-description">אפקט חשיפה כפולה</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="photoshop--work" href="./img/photoshop/Anaglyph.webp" target="_blank">
+                <img class="photoshop--work-image" src="./img/photoshop/Preview/Anaglyph.webp"
+                     alt="Anaglyph-Photoshop Work">
+                <div class="photoshop--work-info">
+                  <p class="photoshop--work-description">אנגליף תלת מימד</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="photoshop--work" href="./img/photoshop/Flower.webp" target="_blank">
+                <img class="photoshop--work-image" src="./img/photoshop/Preview/Flower.webp"
+                     alt="Flower-Photoshop Work">
+                <div class="photoshop--work-info">
+                  <p class="photoshop--work-description">פרח</p>
+                </div>
+              </a>
+            </li>
+            <li>
+          </ul>
+        </div>
+      </section>
+
+
+      <section class="contact" id="contact" data-aos="fade" data-aos-offset="400">
+        <h1 class="heading">צרו קשר</h1>
+        <div class="contact-info">
+          <p class="contact-description">
+            אם אהבתם את תיק העבודות שלי.
+            אשמח אם תיצרו איתי קשר במייל, או דרך דף הלינקדאין.
+          </p>
+          <div class="contact-btns">
+            <a class="btn contact-btn" type="button" href="https://www.linkedin.com/in/moshe-mauzkop-a627a11b7">דף
+              הלינקדאין שלי</a>
+            <a class="mail-btn" type="button" href="mailto: moshe.mauzkop@gmail.com">
+              שלח מייל</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+<script>AOS.init({
+    once: true,
+    easing: "ease-in",
+    duration: 500
+  });</script>
+
+</html>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="56" viewBox="0 0 56 56">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Menu_Icon);
+      }
+
+      .cls-2 {
+        fill: #fafafa;
+      }
+    </style>
+    <clipPath id="clip-Menu_Icon">
+      <rect width="56" height="56"/>
+    </clipPath>
+  </defs>
+  <g id="Menu_Icon" data-name="Menu Icon" class="cls-1">
+    <path id="Menu" class="cls-2" d="M4.4,5C3.074,5,2,6.535,2,8.429s1.074,3.429,2.4,3.429H47.6c1.326,0,2.4-1.535,2.4-3.429S48.924,5,47.6,5Zm0,20.571C3.074,25.571,2,27.105,2,29s1.074,3.429,2.4,3.429H47.6c1.326,0,2.4-1.535,2.4-3.429s-1.074-3.429-2.4-3.429Zm0,20.571c-1.326,0-2.4,1.534-2.4,3.429S3.074,53,4.4,53H47.6c1.326,0,2.4-1.535,2.4-3.429s-1.074-3.429-2.4-3.429Z" transform="translate(2 -1)"/>
+  </g>
+</svg>

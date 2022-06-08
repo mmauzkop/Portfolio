@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="56" viewBox="0 0 56 56">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Close_Icon);
+      }
+
+      .cls-2 {
+        fill: #fafafa;
+      }
+    </style>
+    <clipPath id="clip-Close_Icon">
+      <rect width="56" height="56"/>
+    </clipPath>
+  </defs>
+  <g id="Close_Icon" data-name="Close Icon" class="cls-1">
+    <path id="Close" class="cls-2" d="M6.985,3.991A3,3,0,0,0,4.9,9.133L23.745,27.981,4.9,46.829a3,3,0,1,0,4.236,4.236L27.981,32.217,46.83,51.065a3,3,0,1,0,4.235-4.235L32.216,27.981,51.065,9.133A3,3,0,1,0,46.83,4.9L27.981,23.746,9.132,4.9A3,3,0,0,0,6.985,3.991Z" transform="translate(0.01 0.01)"/>
+  </g>
+</svg>
