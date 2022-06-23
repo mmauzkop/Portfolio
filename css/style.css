@@ -720,14 +720,14 @@ body {
 }
 
 .project--subtitle {
-  color: var(--primary);
+  color: var(--light-primary);
   margin-bottom: 1rem;
   font-size: var(--font-sm);
   font-weight: 500;
 }
 
 .project--title {
-  color: var(--light-primary);
+  color: var(--primary);
   font-size: clamp(3rem, 3.5vw, 4rem);
   font-weight: 700;
 }

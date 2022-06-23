@@ -39,7 +39,15 @@ omniLink.addEventListener("mouseover", () => {
   omnifood.classList.add("project--link-hovered");
 });
 
+omnifoodTitle.addEventListener("mouseover", () => {
+  omnifood.classList.add("project--link-hovered");
+});
+
 omniLink.addEventListener("mouseleave", () => {
+  omnifood.classList.remove("project--link-hovered");
+});
+
+omnifoodTitle.addEventListener("mouseleave", () => {
   omnifood.classList.remove("project--link-hovered");
 });
 
@@ -50,8 +58,18 @@ scoresLink.addEventListener("mouseover", () => {
   scores.classList.add("project--link-hovered");
 });
 
+scoresTitle.addEventListener("mouseover", () => {
+  scores.classList.add("project--link-hovered");
+});
+
 scoresLink.addEventListener("mouseleave", () => {
   scores.classList.remove("project--link-hovered");
 });
+
+scoresTitle.addEventListener("mouseleave", () => {
+  scores.classList.remove("project--link-hovered");
+});
+
+//#endregion Scores
 
 //////
