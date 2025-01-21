@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome To My Portfolio">
+    <title>Moshe Mauzkop &dash; Portfolio</title>
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <link rel="icon" type="image/svg+xml" href="./img/Favicons/Favicon-Dark.png" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/svg+xml" href="./img/Favicons/Favicon-Light.png"
+          media="(prefers-color-scheme: light)" />
+    <link rel="apple-touch-icon" href="./img/Favicons/Apple-Icon.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Open+Sans:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script defer src="./script.js"></script>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+    <header class="Header">
+        <a id="LogoLink" href="#" role="link" aria-label="Link To Homepage">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="logo" fill-rule="evenodd" clip-rule="evenodd"
+                      d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40ZM20 
+                38C10.0589 38 2 29.9411 2 20C2 15.3899 3.73312 11.1845 6.58336 8C6.58336 8 7.33333 8 9 10.5C10 12 10 13 10 
+                13V18V27H12.5V18C12.5 16.5 13.5 15 15.5 15C18 15 19 17 19 18V27H21.5V18C21.5 17 22 15 24.5 15C27 15 27.5 17 27.5 
+                18V27C27.5 28.5 28 29.5 29.5 31C30.5 32 32 33.4166 32 33.4166C28.8155 36.2669 24.6101 38 20 38ZM38 20C38 10.0589 
+                29.9411 2 20 2C15.3899 2 11.1845 3.73312 8 6.58336C8 6.58336 9.5 8 10.5 9C12 10.5 12.5 11.5 12.5 14C12.5 14 13.5 
+                13 16 13C19.5 13 20.25 15 20.25 15C20.25 15 21 13 24.5 13C30 13 30 17 30 18V27C30 27 30 28 31 29.5C32.6667 32 33.4166 
+                32 33.4166 32C36.2669 28.8155 38 24.6101 38 20Z" />
+            </svg>
+
+        </a>
+        <nav class="Nav-Btns">
+            <button id="Mobile-Resume"
+                    onclick="location.assign('https://www.dropbox.com/s/qz9r34947lw6bhr/My%20Resume.pdf?dl=0')">
+                <svg width=" 30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M16.755 0C17.55 0 18.315 0.315 18.885 0.885L26.115 8.13C26.685 8.685 27 9.45 27 10.245V27C27 28.65 
+                25.65 30 24 30H5.985C4.335 30 3 28.65 3 27V3C3 1.35 4.35 0 6 0H16.755ZM24 18C24 18.5 23.5 19 23 19H7C6.5 19 6 18.5 6 18C6 
+                17.5 6.5 17 7 17H23C23.5 17 24 17.5 24 18ZM24 14C24 14.5 23.5 15 23 15H7C6.5 15 6 14.5 6 14C6 13.5 6.5 13 7 13H23C23.5 13 
+                24 13.5 24 14ZM6 22C6 22.5 6.5 23 7 23H14C14.5 23 15 22.5 15 22C15 21.5 14.5 21 14 21H7C6.5 21 6 21.5 6 22ZM24 26C24 26.5 
+                23.5 27 23 27H7C6.5 27 6 26.5 6 26C6 25.5 6.5 25 7 25H23C23.5 25 24 25.5 24 26ZM23 23H18C17.5 23 17 22.5 17 22C17 21.5 17.5 
+                21 18 21H23C23.5 21 24 21.5 24 22C24 22.5 23.5 23 23 23ZM17 11H23C23.5 11 24 10.5 24 10C24 9.5 23.5 9 23 9H17C16.5 9 
+                16 9.5 16 10C16 10.5 16.5 11 17 11ZM10 7C11.105 7 12 6.105 12 5C12 3.895 11.105 3 10 3C8.895 3 8 3.895 8 5C8 6.105 8.895 
+                7 10 7ZM6 10C6 8.67 8.665 8 10 8C11.335 8 14 8.67 14 10V10.5C14 10.775 
+                13.775 11 13.5 11H6.5C6.225 11 6 10.775 6 10.5V10Z" />
+                </svg>
+            </button>
+            <button class="Mobile-Icons">
+                <div class="Mobile-Menu" role="button" aria-label="Menu-Icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 0H38C39 0 40 1 40 2.5C40 4 39 5 38 5H2C1 5 0 4 0 2.5C0 1 1 0 2 0Z" />
+                        <path
+                              d="M2 17.5H38C39 17.5 40 18.5 40 20C40 21.5 39 22.5 38 22.5H2C1 22.5 0 21.5 0 20C0 18.5 1 17.5 2 17.5Z" />
+                        <path d="M2 35H38C39 35 40 36 40 37.5C40 39 39 40 38 40H2C1 40 0 39 0 37.5C0 36 1 35 2 35Z" />
+                    </svg>
+                </div>
+                <div class="Mobile-Close" role="button" aria-label="Close-Icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.5303 20L39.6687 3.86155C40.173 3.35723 40.173 1.84425 39.1644 0.835595C38.1557 -0.173058 36.6428 -0.173057 
+          36.1384 0.331269L20 16.4697L3.86156 0.33128C3.35723 -0.173046 1.84425 -0.173046 0.835597 0.835607C-0.173055 1.84426 
+          -0.173055 3.35724 0.331272 3.86156L16.4697 20L0.331269 36.1384C-0.173058 36.6428 -0.173058 38.1557 0.835595 39.1644C1.84425 
+          40.173 3.35723 40.1731 3.86156 39.6687L20 23.5303L36.1384 39.6687C36.6428 40.1731 38.1557 40.1731 39.1644 39.1644C40.173 
+          38.1557 40.1731 36.6428 39.6687 36.1384L23.5303 20Z" />
+                    </svg>
+                </div>
+            </button>
+        </nav>
+        <nav class="Nav-List">
+            <ul>
+                <li><a id="AboutListBtn" href="#"
+                       onclick="document.documentElement.style.removeProperty('overflow-y');">About</a></li>
+                <li><a id="ProjectsListBtn" href="#"
+                       onclick="document.documentElement.style.removeProperty('overflow-y');">Projects</a></li>
+                <Footer>Copyright &copy; <span class="year">2024</span>. Moshe Maukzop</Footer>
+            </ul>
+        </nav>
+        <nav class="Nav-Bar">
+            <ul>
+                <li><a class="Nav-About" id="AboutBarBtn" href="#"
+                       onclick="document.documentElement.style.removeProperty('overflow-y');">About</a></li>
+                <li><a class="Nav-Projects" id="ProjectsBarBtn" href="#"
+                       onclick="document.documentElement.style.removeProperty('overflow-y');">Projects</a></li>
+            </ul>
+        </nav>
+        <button class="Nav-Btn-Resume" type="button"
+                onclick="location.assign('https://www.dropbox.com/s/qz9r34947lw6bhr/My%20Resume.pdf?dl=0')">Resume</button>
+    </header>
+
+    <div class="VideoBackground" name="video">
+        <video class="Video" src="./img/Video.mp4" muted loop poster autoplay playsinline>
+            <cite><a href="https://www.pexels.com/video/sunlight-over-clouds-13368020/"></a></cite>
+        </video>
+        <div class="VideoOverlay"></div>
+    </div>
+
+    <main>
+        <section id="HomePage">
+            <h1>Welcome To My Portfolio</h1>
+            <h2>Moshe Mauzkop</h2>
+            <h3>UX / UI Designer</h3>
+            <p>Like to think new ideas<br>Always work precisely and neatly.</p>
+            <div class="Homepage-Links">
+                <a class="AboutBtn" id="AboutLinkBtn" href="#" role="button"
+                   aria-label="Button Link To About Page">About Me</a>
+                <a class="ProjectsBtn" id="ProjectsLinkBtn" href="#" role="button"
+                   aria-label="Button Link To Projects Page">My Projects</a>
+            </div>
+
+            <div class="HyperLinks">
+                <a class="Mail-Link" type="button"
+                   href="mailto: moshe.mauzkop@gmail.com">moshe.mauzkop@gmail.com</a>
+                <a class="Git-Link" href="https://github.com/mmauzkop" target="_blank"
+                   role="link" rel="noreferrer" title="Github" aria-label="Github">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M20 0C8.95 0 0 9.17638 0 20.5059C0 29.5797 5.725 37.2438 13.675 39.9608C14.675 40.1403 15.05 39.5251 15.05 
+          38.9868C15.05 38.4998 15.025 36.8849 15.025 35.1676C10 36.116 8.7 33.9116 8.3 32.7581C8.075 32.1686 7.1 30.3487 
+          6.25 29.8617C5.55 29.4772 4.55 28.5288 6.225 28.5032C7.8 28.4775 8.925 29.9898 9.3 30.605C11.1 33.7065 13.975 
+          32.835 15.125 32.2968C15.3 30.9639 15.825 30.0667 16.4 29.5541C11.95 29.0414 7.3 27.2728 7.3 19.4293C7.3 17.1993 
+          8.075 15.3538 9.35 13.9184C9.15 13.4057 8.45 11.3039 9.55 8.48431C9.55 8.48431 11.225 7.94603 15.05 10.5862C16.65 
+          10.1248 18.35 9.89408 20.05 9.89408C21.75 9.89408 23.45 10.1248 25.05 10.5862C28.875 7.9204 30.55 8.48431 30.55 
+          8.48431C31.65 11.3039 30.95 13.4057 30.75 13.9184C32.025 15.3538 32.8 17.1737 32.8 19.4293C32.8 27.2984 28.125 
+          29.0414 23.675 29.5541C24.4 30.1949 25.025 31.4253 25.025 33.3477C25.025 36.0903 25 38.2947 25 38.9868C25 39.5251 
+          25.375 40.1659 26.375 39.9608C30.3453 38.5865 33.7953 35.9702 36.2394 32.4802C38.6836 28.9903 39.9988 24.8023 40 
+          20.5059C40 9.17638 31.05 0 20 0Z" />
+                    </svg></a>
+            </div>
+        </section>
+        <section id="AboutPage">
+            <h1 class="Heading-Primary">About Me</h1>
+            <div class="About">
+                <div>
+                    <img class="About-Image" src="./img/Image.webp" alt="Profile-Image" aria-label="Profile-Image">
+                    <button id="ToolsBtnTablet">Tools & Ceritifactes</button>
+                </div>
+                <article>
+                    <p> Hi, My name is <span>Moshe</span>,<br>
+                        I'm an <span>UX / UI Designer</span>, from Petah
+                        Tikva.</p>
+                    <p>I started to design 5 years ago.
+                        I design for the digital platforms: Mobile devices, Tablets & Desktops.
+                        I create landing pages, websites and mobile applications by using my tools
+                        and knowledge to achieve the best result.</p>
+                    <p>I think design is the key to connecting people to the products
+                        that serve us every day, The Idea that can change our lives.
+                        or The Brand that wants to succeed. <span>Design is essential for everything. In anytime.</span>
+                    </p>
+                    <p> I like to learn new things by myself, whether it's through
+                        taking professional courses from the Internet, books or even through #Short videos from YouTube.
+                    </p>
+                    <button id="ToolsBtn">Tools & Ceritifactes</button>
+                </article>
+            </div>
+            <aside id="ToolsPage">
+                <div id="ToolsCloseBtn" role="button" aria-label="Close-Icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.5303 20L39.6687 3.86155C40.173 3.35723 40.173 1.84425 39.1644 0.835595C38.1557 -0.173058 36.6428 -0.173057 
+          36.1384 0.331269L20 16.4697L3.86156 0.33128C3.35723 -0.173046 1.84425 -0.173046 0.835597 0.835607C-0.173055 1.84426 
+          -0.173055 3.35724 0.331272 3.86156L16.4697 20L0.331269 36.1384C-0.173058 36.6428 -0.173058 38.1557 0.835595 39.1644C1.84425 
+          40.173 3.35723 40.1731 3.86156 39.6687L20 23.5303L36.1384 39.6687C36.6428 40.1731 38.1557 40.1731 39.1644 39.1644C40.173 
+          38.1557 40.1731 36.6428 39.6687 36.1384L23.5303 20Z" fill="var(--clr-white)" />
+                    </svg>
+                </div>
+                <h1 id="ToolsTitle">Tools</h1>
+                <p id="ToolsParagraph">These are the tools and programming languages that I know and work with:</p>
+                <ul id="ToolsList">
+                    <li class="Tool">
+                        <img class="Tool-Image" src="./img/Svg/Photoshop.svg" alt="Adobe Photoshop-Icon"
+                             aria-label="Adobe Photoshop-Icon"><span>Photoshop</span>
+                    </li>
+                    <li class="Tool">
+                        <img class="Tool-Image" src="./img/Svg/Illustrator.svg" alt="Adobe Illustrator-Icon"
+                             aria-label="Adobe Illustrator-Icon"><span>Illustrator</span>
+                    </li>
+                    <li class="Tool">
+                        <img class="Tool-Image" src="./img/Svg/XD.svg" alt="Adobe XD-Icon"
+                             aria-label="Adobe XD-Icon"><span>XD</span>
+                    </li>
+                    <li class="Tool">
+                        <img class="Tool-Image" src="./img/Svg/Figma.svg" alt="Figma-Icon"
+                             aria-label="Figma-Icon"><span>Figma</span>
+                    </li>
+                    <li class="Tool">
+                        <img class="Tool-Image" src="./img/Svg/HTML.svg" alt="HTML-Icon"
+                             aria-label="HTML-Icon"><span>HTML</span>
+                    </li>
+                    <li class="Tool">
+                        <img class="Tool-Image" src="./img/Svg/CSS.svg" alt="CSS-Icon"
+                             aria-label="CSS-Icon"><span>CSS</span>
+                    </li>
+                </ul>
+                <h2>Certificates</h2>
+                <ol id="CertificatesList">
+                    <button class="Certificate" role="button" title="Netcraft-Certificate"
+                            onclick="location.assign('./img/certificates/Netcraft.pdf')">
+                        <img src="./img/Certificates/Netcraft.webp"
+                             alt="Netcraft-Certificate Image"
+                             aria-label="Netcraft-Certificate Image">
+                        <div class="Certificate-Details">
+                            <div class="External-Link" title="External Link"> <svg width="20" height="20"
+                                     viewBox="0 0 20 20" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.6667 17.7778H3.33333C2.72222 17.7778 2.22222 17.2778 2.22222 16.6667V3.33333C2.222222.72222 
+                2.72222 2.22222 3.33333 2.22222H8.88889C9.5 2.22222 10 1.72222 10 1.11111C10 0.5 9.5 0 8.88889 0H2.22222C0.988889 
+                0 0 1 0 2.22222V17.7778C0 19 1 20 2.22222 20H17.7778C19 20 20 19 20 17.7778V11.1111C20 10.5 19.5 10 18.8889 
+                10C18.2778 10 17.7778 10.5 17.7778 11.1111V16.6667C17.7778 17.2778 17.2778 17.7778 16.6667 17.7778ZM12.2222 
+                1.11111C12.2222 1.72222 12.7222 2.22222 13.3333 2.22222H16.2111L6.06667 12.3667C5.63333 12.8 5.63333 13.5 6.06667 
+                13.9333C6.5 14.3667 7.2 14.3667 7.63333 13.9333L17.7778 3.78889V6.66667C17.7778 7.27778 18.2778 7.77778 18.8889 
+                7.77778C19.5 7.77778 20 7.27778 20 6.66667V1.11111C20 0.5 19.5 0 18.8889 0H13.3333C12.7222 0 12.2222 0.5 12.2222 
+                1.11111Z"></path>
+                                </svg></div>
+                            <span><svg width="40" height="30" viewBox="0 0 40 30" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.707106 9.29289L9.29289 0.707107C9.68342 0.316583 10.3166 0.316582 10.7071 0.707106L19.2929 
+             9.29289C19.6834 9.68342 20.3166 9.68342 20.7071 9.29289L29.2929 0.707107C29.6834 0.316583 30.3166 0.316582 30.7071 
+             0.707106L39.2929 9.29289C39.6834 9.68342 39.6834 10.3166 39.2929 10.7071L20.7071 29.2929C20.3166 29.6834 19.6834 
+             29.6834 19.2929 29.2929L0.707107 10.7071C0.316582 10.3166 0.316582 9.68342 0.707106 9.29289Z"></path>
+                                </svg></span>
+                            <h1>Netcraft Academy</h1>
+                            <p>Final Project Certificate</p>
+                        </div>
+                    </button>
+                    <button class="Certificate" role="button" title="Photoshop Essentials-Certificate"
+                            onclick="location.assign('https://www.udemy.com/certificate/UC-1a6b9a9e-23f4-4c21-affb-f2aecbac9709/')">
+                        <img src="./img/Certificates/Photoshop Essentials.webp"
+                             alt="Photoshop Essentials-Certificate Image"
+                             aria-label="Photoshop Essentials-Certificate Image">
+                        <div class="Certificate-Details">
+                            <div class="External-Link" title="External Link">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.6667 17.7778H3.33333C2.72222 17.7778 2.22222 17.2778 2.22222 16.6667V3.33333C2.222222.72222 
+                     2.72222 2.22222 3.33333 2.22222H8.88889C9.5 2.22222 10 1.72222 10 1.11111C10 0.5 9.5 0 8.88889 0H2.22222C0.988889 
+                     0 0 1 0 2.22222V17.7778C0 19 1 20 2.22222 20H17.7778C19 20 20 19 20 17.7778V11.1111C20 10.5 19.5 10 18.8889 
+                     10C18.2778 10 17.7778 10.5 17.7778 11.1111V16.6667C17.7778 17.2778 17.2778 17.7778 16.6667 17.7778ZM12.2222 
+                     1.11111C12.2222 1.72222 12.7222 2.22222 13.3333 2.22222H16.2111L6.06667 12.3667C5.63333 12.8 5.63333 13.5 6.06667 
+                     13.9333C6.5 14.3667 7.2 14.3667 7.63333 13.9333L17.7778 3.78889V6.66667C17.7778 7.27778 18.2778 7.77778 18.8889 
+                     7.77778C19.5 7.77778 20 7.27778 20 6.66667V1.11111C20 0.5 19.5 0 18.8889 0H13.3333C12.7222 0 12.2222 0.5 12.2222 
+                     1.11111Z"></path>
+                                </svg>
+                            </div>
+                            <span><svg width="20" height="40" viewBox="0 0 20 40" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 0L0 6V12L10 6L20 12V6L10 0ZM0 17V30.5C0 32.9706 0.5 36 2.5 37.5C4.5 39 6.5 40 10 
+                     40C13.5 40 15.5 39 17.5 37.5C19.5 36 20 33 20 30.5V17H15V29.9967C15 33 12.5 35 10 35C7.5 35 5 
+                     33.0033 5 30V17H0Z"></path>
+                                </svg></span>
+                            <h1>Photoshop Essentials</h1>
+                            <p>Udemy Certificate</p>
+                        </div>
+                    </button>
+                    <button class="Certificate" role="button" title="Photoshop Advanced-Certificate"
+                            onclick="location.assign('https://www.udemy.com/certificate/UC-cb80ef79-0cf8-4a88-8adb-1fcdb26fbe6d/')">
+                        <img src="./img/Certificates/Photoshop Advanced.webp"
+                             alt="Photoshop Advanced-Certificate Image"
+                             aria-label="Photoshop Advanced-Certificate Image">
+                        <div class="Certificate-Details">
+                            <div class="External-Link" title="External Link">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.6667 17.7778H3.33333C2.72222 17.7778 2.22222 17.2778 2.22222 16.6667V3.33333C2.222222.72222 
+             2.72222 2.22222 3.33333 2.22222H8.88889C9.5 2.22222 10 1.72222 10 1.11111C10 0.5 9.5 0 8.88889 0H2.22222C0.988889 
+             0 0 1 0 2.22222V17.7778C0 19 1 20 2.22222 20H17.7778C19 20 20 19 20 17.7778V11.1111C20 10.5 19.5 10 18.8889 
+             10C18.2778 10 17.7778 10.5 17.7778 11.1111V16.6667C17.7778 17.2778 17.2778 17.7778 16.6667 17.7778ZM12.2222 
+             1.11111C12.2222 1.72222 12.7222 2.22222 13.3333 2.22222H16.2111L6.06667 12.3667C5.63333 12.8 5.63333 13.5 6.06667 
+             13.9333C6.5 14.3667 7.2 14.3667 7.63333 13.9333L17.7778 3.78889V6.66667C17.7778 7.27778 18.2778 7.77778 18.8889 
+             7.77778C19.5 7.77778 20 7.27778 20 6.66667V1.11111C20 0.5 19.5 0 18.8889 0H13.3333C12.7222 0 12.2222 0.5 12.2222 
+             1.11111Z"></path>
+                                </svg>
+                            </div>
+                            <span><svg width="20" height="40" viewBox="0 0 20 40" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 0L0 6V12L10 6L20 12V6L10 0ZM0 17V30.5C0 32.9706 0.5 36 2.5 37.5C4.5 39 6.5 40 10 
+             40C13.5 40 15.5 39 17.5 37.5C19.5 36 20 33 20 30.5V17H15V29.9967C15 33 12.5 35 10 35C7.5 35 5 
+             33.0033 5 30V17H0Z"></path>
+                                </svg></span>
+                            <h1>Photoshop Advanced</h1>
+                            <p>Udemy Certificate</p>
+                        </div>
+                    </button>
+                    <button class="Certificate" role="button" title="Responsive Websites-Certificate"
+                            onclick="location.assign('https://www.udemy.com/certificate/UC-be706e1b-1c78-4063-8571-a13849c2c437/')">
+                        <img src="./img/Certificates/Responsive Websites.webp"
+                             alt="Responsive Websites-Certificate Image"
+                             aria-label="Responsive Websites-Certificate Image">
+                        <div class="Certificate-Details">
+                            <div class="External-Link" title="External Link">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.6667 17.7778H3.33333C2.72222 17.7778 2.22222 17.2778 2.22222 16.6667V3.33333C2.222222.72222 
+             2.72222 2.22222 3.33333 2.22222H8.88889C9.5 2.22222 10 1.72222 10 1.11111C10 0.5 9.5 0 8.88889 0H2.22222C0.988889 
+             0 0 1 0 2.22222V17.7778C0 19 1 20 2.22222 20H17.7778C19 20 20 19 20 17.7778V11.1111C20 10.5 19.5 10 18.8889 
+             10C18.2778 10 17.7778 10.5 17.7778 11.1111V16.6667C17.7778 17.2778 17.2778 17.7778 16.6667 17.7778ZM12.2222 
+             1.11111C12.2222 1.72222 12.7222 2.22222 13.3333 2.22222H16.2111L6.06667 12.3667C5.63333 12.8 5.63333 13.5 6.06667 
+             13.9333C6.5 14.3667 7.2 14.3667 7.63333 13.9333L17.7778 3.78889V6.66667C17.7778 7.27778 18.2778 7.77778 18.8889 
+             7.77778C19.5 7.77778 20 7.27778 20 6.66667V1.11111C20 0.5 19.5 0 18.8889 0H13.3333C12.7222 0 12.2222 0.5 12.2222 
+             1.11111Z"></path>
+                                </svg>
+                            </div>
+                            <span><svg width="20" height="40" viewBox="0 0 20 40" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 0L0 6V12L10 6L20 12V6L10 0ZM0 17V30.5C0 32.9706 0.5 36 2.5 37.5C4.5 39 6.5 40 10 
+             40C13.5 40 15.5 39 17.5 37.5C19.5 36 20 33 20 30.5V17H15V29.9967C15 33 12.5 35 10 35C7.5 35 5 
+             33.0033 5 30V17H0Z"></path>
+                                </svg></span>
+                            <h1>Responsive Websites</h1>
+                            <p>Udemy Certificate</p>
+                        </div>
+                    </button>
+                    <button class="Certificate" role="button" title="Figma UX/UI Design-Certificate"
+                            onclick="location.assign('https://www.udemy.com/certificate/UC-a4d4b67c-8609-419e-9bd5-def5df9ae081/')">
+                        <img src="./img/Certificates/Figma UXUI Design.webp"
+                             alt="Figma UX/UI Design-Certificate Image"
+                             aria-label="Figma UX/UI Design-Certificate Image">
+                        <div class="Certificate-Details">
+                            <div class="External-Link" title="External Link">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.6667 17.7778H3.33333C2.72222 17.7778 2.22222 17.2778 2.22222 16.6667V3.33333C2.222222.72222 
+             2.72222 2.22222 3.33333 2.22222H8.88889C9.5 2.22222 10 1.72222 10 1.11111C10 0.5 9.5 0 8.88889 0H2.22222C0.988889 
+             0 0 1 0 2.22222V17.7778C0 19 1 20 2.22222 20H17.7778C19 20 20 19 20 17.7778V11.1111C20 10.5 19.5 10 18.8889 
+             10C18.2778 10 17.7778 10.5 17.7778 11.1111V16.6667C17.7778 17.2778 17.2778 17.7778 16.6667 17.7778ZM12.2222 
+             1.11111C12.2222 1.72222 12.7222 2.22222 13.3333 2.22222H16.2111L6.06667 12.3667C5.63333 12.8 5.63333 13.5 6.06667 
+             13.9333C6.5 14.3667 7.2 14.3667 7.63333 13.9333L17.7778 3.78889V6.66667C17.7778 7.27778 18.2778 7.77778 18.8889 
+             7.77778C19.5 7.77778 20 7.27778 20 6.66667V1.11111C20 0.5 19.5 0 18.8889 0H13.3333C12.7222 0 12.2222 0.5 12.2222 
+             1.11111Z"></path>
+                                </svg>
+                            </div>
+                            <span><svg width="20" height="40" viewBox="0 0 20 40" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 0L0 6V12L10 6L20 12V6L10 0ZM0 17V30.5C0 32.9706 0.5 36 2.5 37.5C4.5 39 6.5 40 10 
+             40C13.5 40 15.5 39 17.5 37.5C19.5 36 20 33 20 30.5V17H15V29.9967C15 33 12.5 35 10 35C7.5 35 5 
+             33.0033 5 30V17H0Z"></path>
+                                </svg></span>
+                            <h1>Figma UX/UI Design</h1>
+                            <p>Udemy Certificate</p>
+                        </div>
+                    </button>
+                </ol>
+            </aside>
+        </section>
+        <section id="ProjectsPage">
+            <h1 class="Heading-Primary">My Projects</h1>
+            <article class="Projects">
+                <div class="Project">
+                    <img id="ProjectImage1" src="./img/Projects/Scores.webp" alt="Scores-Project"
+                         aria-label="Scores-Project">
+                    <div class="ProjectInfo" id="ProjectInfo1">
+                        <span>Featured Project #1</span>
+                        <h1>Scores</h1>
+                        <p>Buy more & participate to won the race.</p>
+                        <ul>
+                            <li>&bullet; Mobile App</li>
+                            <li>&bullet; E-commerce</li>
+                            <li>&bullet; Figma Project</li>
+                        </ul>
+                        <div class="Project-Details">
+                            <div class="ProjectIcons" id="ProjectIcons1">
+                                <div class="Icon" id="Icon1" role="img" name="MobileApp">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                              d="M27 0H13C10 0 8 2 8 5V35C8 38.1818 10 40 13 40H27C30 40 32 38 32 35V5C32 2 30 0 27 0ZM20 38.5C18.5 38.5 
+         17 37.5 17 35.5C17 33.5 18.5 32.5 20 32.5C21.5 32.5 23 33.5 23 35.5C23 37.5 21.5 38.5 20 38.5ZM28 31H12V5H28V31Z">
+                                    </svg>
+                                    <span class="TitleInfo" id="Title1">Mobile App</span>
+                                </div>
+                                <div class="Icon" id="Icon2" role="img" name="ecommerce">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M35.0503 19.0598L20.9248 4.92823C20.333 4.33608 19.5171 4 18.6693 4H7.1994C5.43973 4 4 5.44036 4 
+              7.2008V18.6757C4 19.5239 4.33594 20.3402 4.94382 20.9322L19.0692 35.0639C20.317 36.312 22.3485 36.312 23.5963 
+              35.0639L35.0663 23.589C36.314 22.3407 36.314 20.3242 35.0503 19.0598ZM11.1987 13.6024C9.8709 13.6024 8.79911
+              12.5301 8.79911 11.2018C8.79911 9.87348 9.8709 8.80121 11.1987 8.80121C12.5264 8.80121 13.5982 9.87348 13.5982
+              11.2018C13.5982 12.5301 12.5264 13.6024 11.1987 13.6024Z" fill="var(--clr-secondary)" />
+                                    </svg>
+                                    <span class="TitleInfo" id="Title2">E-commerce</span>
+                                </div>
+                                <div class="IconFigma" id="Icon3" role="img" name="figma">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26.5 27C30.1562 27 33 24.1562 33 20.5C33 16.8437 30.1562 14 26.5 14C22.8437 14 20 16.8437 20 20.5C20 
+              24.1562 22.8437 27 26.5 27Z" fill="var(--Figma1)" />
+                                        <path d="M20 33.5C20 37.0898 17.0898 40 13.5 40C9.91015 40 7 37.0898 7 33.5C7 29.9102 9.91015 27 13.5 27C14.517 
+              27 20 27 20 27V29.6C20 29.6 20 32.0365 20 33.5Z" fill="var(--Figma2)" />
+                                        <path d="M20 27H13.5C11.5882 27 10.0588 26.5937 8.91177 25.375C7.7647 24.1563 7 22.5312 7 20.5C7 18.4688 7.7647 
+              16.8437 8.91177 15.625C10.0588 14.4062 11.5882 14 13.5 14H20V27Z" fill="var(--Figma3)" />
+                                        <path d="M20 14H13.5C11.5882 14 10.0588 13.5625 8.91177 12.25C7.7647 10.9375 7 9.1875 7 7C7 4.8125 7.7647 3.0625 
+                8.91177 1.75C10.0588 0.437505 11.5882 0 13.5 0H20V14Z" fill="var(--Figma3)" />
+                                        <path d="M20 14H26.5C28.4118 14 29.9412 13.5625 31.0882 12.25C32.2353 10.9375 33 9.1875 33 7C33 4.8125 32.2353 
+              3.0625 31.0882 1.75C29.9412 0.437505 28.4118 0 26.5 0H20V14Z" fill="var(--Figma4)" />
+                                    </svg>
+                                    <span class="TitleInfo" id="Title3">Figma Project</span>
+                                </div>
+                            </div>
+                            <a class="ProjectLink" id="ProjectLink1" href="https://mmauzkop.github.io/Scores/"
+                               role="button" title='View "Scores" Project'>View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Project">
+                    <img id="ProjectImage2" src="./img/Projects/MyPortfolio.webp" alt="Portfolio-Project"
+                         aria-label="Portfolio-Project">
+                    <div class="ProjectInfo" id="ProjectInfo2">
+
+                        <span>Featured Project #2 </span>
+                        <h1 id="ProjectLink2">Portfolio</h1>
+                        <p>Builded from scratch. Contains HTML, CSS and JS without using any Web-builders.</p>
+                        <ul>
+                            <li>&bullet; Cross-Platforms</li>
+                        </ul>
+                        <div class="Project-Details">
+                            <div class="ProjectIcons" id="ProjectIcons2">
+                                <div class="Icon" id="Icon4" role="img" name="MobileApp">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M28.8859 27.1122L21.7756 20.0019V14.3493C24.1753 13.4783 25.7929 10.9897 25.2062 8.19891C24.7619 6.1014 
+                     23.0198 4.43049 20.9046 4.07498C17.5628 3.52393 14.6654 6.08362 14.6654 9.33656C14.6654 11.6474 16.1585 13.6027 
+                     18.2205 14.3493V20.0019L11.1102 27.1122H5.77757C4.7999 27.1122 4 27.912 4 28.8898V34.2224C4 35.2 4.7999 36 5.77757 
+                     36H11.1102C12.0879 36 12.8878 35.2 12.8878 34.2224V30.5784L19.998 23.1127L27.1083 30.5784V34.2224C27.1083 35.2 27.9081 
+                     36 28.8859 36H34.2185C35.1961 36 35.9961 35.2 35.9961 34.2224V28.8898C35.9961 27.912 35.1961 27.1122 
+                     34.2185 27.1122H28.8859Z" />
+                                    </svg>
+                                    <span class="TitleInfo" id="Title4">Cross-Platforms</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+<script>
+    AOS.init({
+        once: true,
+        easing: "ease-in",
+        duration: 800
+    });
+</script>
+
+</html>

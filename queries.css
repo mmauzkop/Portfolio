@@ -1,0 +1,491 @@
+@media only screen and (orientation:landscape) and (min-device-width: 375px) and (max-device-width: 845px) and (-webkit-device-pixel-ratio: 3) {
+    #HomePage h1 {
+        margin-top: calc(var(--FnH4)*4 + 2rem);
+    }
+}
+
+@media (max-device-width: 936px) {
+    .AboutBtn {
+        background-color: var(--White);
+        color: var(--Black);
+        cursor: var(--Default);
+    }
+
+    .ProjectsBtn {
+        background-color: var(--Secondary);
+        color: var(--Black);
+        cursor: var(--Default);
+    }
+}
+
+@media (min-width: 320px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+@media (min-width: 320px) and (orientation:landscape) {
+
+    #HomePage,
+    #AboutPage,
+    #ProjectsPage {
+        justify-content: unset;
+    }
+
+    #HomePage h1 {
+        margin-top: calc(var(--FnH0) + (var(--FnH4)));
+    }
+
+    .Git-Link {
+        margin-bottom: var(--FnH3);
+    }
+}
+
+@media (min-width: 480px) {
+    .Homepage-Links {
+        flex-direction: row;
+        width: auto;
+    }
+
+    .HyperLinks {
+        flex-direction: row;
+        margin-bottom: var(--FnH3);
+    }
+
+    .Git-Link {
+        margin-bottom: 0;
+    }
+
+    #ToolsList {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: var(--FnH6);
+    }
+
+    #CertificatesList {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--FnH4);
+    }
+
+    .Projects {
+        padding-inline: var(--FnH2);
+        ;
+    }
+
+    .ProjectInfo ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 480px) and (orientation:landscape) {
+
+    .Git-Link,
+    .Mail-Link {
+        margin-bottom: var(--FnH3);
+    }
+}
+
+@media (min-width: 600px) {
+    .Projects {
+        padding-inline: var(--FnH2);
+    }
+}
+
+@media (min-width: 600px) and (orientation:landscape) {
+    #HomePage h1 {
+        margin-top: calc(var(--FnH4)*4 + 2rem);
+    }
+}
+
+@media (min-width: 768px) {
+
+    #LogoLink:link,
+    #LogoLink:visited {
+        cursor: var(--Pointer) !important;
+    }
+
+    #LogoLink:hover path,
+    #LogoLink:active path {
+        fill: var(--Primary);
+        transition: var(--Smooth);
+    }
+
+    .Nav-Btns,
+    #Mobile-Resume,
+    .Nav-List,
+    .Nav-open .Nav-List,
+    #ToolsBtn {
+        display: none;
+    }
+
+    .Nav-Bar {
+        display: inline-block;
+    }
+
+    .Nav-Bar ul {
+        display: flex;
+        align-items: center;
+        margin-left: calc(var(--FnH2)*2);
+    }
+
+    .Nav-Bar li {
+        margin-inline: var(--FnH4);
+    }
+
+    .Nav-Bar a:link,
+    .Nav-Bar a:visited {
+        color: var(--White);
+        padding: calc(var(--FnH5)/4);
+        font-size: var(--FnH6);
+        font-weight: var(--WeightMed);
+        transition: var(--Basic);
+    }
+
+    .Nav-Bar a:hover,
+    .Nav-Bar a:active {
+        color: var(--Primary) !important;
+    }
+
+    .Nav-Btn-Resume {
+        background-color: var(--Btns);
+        color: var(--White);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-block: calc(var(--FnH5)/2);
+        padding-inline: var(--FnH5);
+        border: none;
+        border-radius: var(--BordersR);
+        margin-left: var(--FnH5);
+        font-size: var(--FnH6);
+        font-weight: var(--WeightMed);
+        letter-spacing: -0.5px;
+        transition: var(--Smooth);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        cursor: var(--Pointer);
+    }
+
+    .Nav-Btn-Resume:hover {
+        background-color: var(--White);
+        color: var(--Black);
+    }
+
+    .Git-Link,
+    .Mail-Link {
+        cursor: var(--Pointer);
+    }
+
+    .Git-Link:hover path {
+        fill: var(--Primary);
+        opacity: 1;
+    }
+
+    .Mail-Link:hover {
+        color: var(--Primary);
+        opacity: 1;
+    }
+
+    .About {
+        flex-direction: row-reverse;
+        align-items: start;
+        gap: var(--FnH4);
+    }
+
+    .About div {
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: start;
+    }
+
+    .About article p {
+        margin-bottom: 0;
+    }
+
+    #ToolsBtnTablet {
+        background-color: var(--Primary);
+        color: var(--Black);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-block: calc(var(--FnH5)/2);
+        padding-inline: var(--FnH5);
+        border: none;
+        border-radius: var(--BordersR);
+        margin-top: var(--FnH6);
+        margin-bottom: var(--FnH3);
+        font-size: var(--FnH6);
+        font-weight: var(--WeightMed);
+        letter-spacing: -0.5px;
+        cursor: var(--Default);
+    }
+
+    #ToolsList,
+    #CertificatesList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .Project {
+        padding-bottom: 0;
+        border-bottom: 0;
+    }
+
+    .Project img {
+        box-shadow: none;
+        margin-bottom: 0;
+        filter: grayscale(1);
+        opacity: 0.8;
+    }
+
+    .ProjectInfo {
+        position: absolute;
+        top: 0;
+        justify-content: center;
+        background-color: var(--Certificate);
+        padding-inline: var(--FnH2);
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+    }
+}
+
+@media (min-width: 768px) and (orientation:landscape) {
+    #HomePage h1 {
+        margin-top: calc(var(--FnP2)*14);
+    }
+}
+
+@media (min-width: 937px) {
+    .AboutBtn {
+        background-color: var(--Btns);
+        color: var(--White);
+        transition: var(--Smooth);
+        cursor: var(--Pointer);
+    }
+
+    .AboutBtn:hover {
+        background-color: var(--White);
+        color: var(--Black);
+        transform: translateY(-0.4rem);
+    }
+
+    .ProjectsBtn {
+        background-color: var(--Btns);
+        color: var(--Secondary);
+        transition: var(--Smooth);
+        cursor: var(--Pointer);
+    }
+
+    .ProjectsBtn:hover {
+        background-color: var(--Secondary);
+        color: var(--Black);
+        transform: translateY(-0.4rem);
+    }
+
+    .About,
+    #ToolsList {
+        max-width: 100rem;
+    }
+
+    #ToolsBtnTablet,
+    .Certificate-Details,
+    .ProjectInfo ul {
+        display: none
+    }
+
+    .About article p {
+        margin-bottom: revert;
+    }
+
+    #ToolsBtn {
+        background-color: var(--Btns);
+        color: var(--Primary);
+        display: flex;
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        transition: var(--Smooth);
+        cursor: var(--Pointer);
+    }
+
+    #ToolsBtn:hover {
+        background-color: var(--Primary);
+        color: var(--Black);
+        transform: translateY(-0.4rem);
+    }
+
+    #CertificatesList {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .Certificate img {
+        width: calc(var(--FnP1)*10);
+        cursor: var(--Info);
+    }
+
+    .Certificate img:hover {
+        filter: grayscale(0);
+    }
+
+    .Projects {
+        max-width: 120rem;
+    }
+
+    .Project {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .Project img {
+        grid-column: 1/7;
+        transition: var(--Smooth);
+        opacity: 0.085;
+    }
+
+    .Project:last-of-type img {
+        grid-column: 3/9;
+    }
+
+    .ProjectInfo {
+        background-color: transparent;
+        grid-column: 5/9;
+        padding-inline: 0;
+        transition: var(--Smooth);
+    }
+
+    .Project:last-of-type .ProjectInfo {
+        grid-column: 1/5;
+    }
+
+    .Project-Details {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: var(--FnH3);
+    }
+
+    .ProjectIcons {
+        display: flex;
+        gap: var(--FnH5);
+        transition: var(--Smooth);
+    }
+
+    .TitleInfo {
+        position: absolute;
+        background-color: var(--Black);
+        color: var(--White);
+        display: flex;
+        align-items: center;
+        padding: calc(var(--FnP1)/2);
+        border-radius: var(--BordersLg);
+        font-size: var(--FnP2);
+        transition: var(--Smooth);
+        opacity: 0;
+    }
+
+    .ProjectLink {
+        background-color: var(--Btns);
+        color: var(--Primary);
+        border: 1px solid var(--Primary);
+        transition: var(--Smooth);
+        cursor: var(--Pointer);
+    }
+
+    .ProjectLink:hover {
+        background-color: var(--Primary);
+        color: var(--Black);
+    }
+
+    .ProjectHoveredImage {
+        filter: grayscale(0) !important;
+        opacity: 0.4 !important;
+    }
+
+    .ProjectHoveredInfo {
+        background-color: var(--Accent) !important;
+        padding-inline: var(--FnH5) !important;
+        border-radius: 0 0.8rem 0.8rem 0 !important;
+    }
+
+    .ProjectHoveredIcons {
+        gap: calc(var(--FnH5)/2) !important;
+    }
+
+    .Icon,
+    .IconFigma {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Icon svg,
+    .IconFigma svg {
+        padding: calc(var(--FnP1)/4);
+    }
+
+    .Icon path {
+        fill: var(--Secondary);
+    }
+
+    #Icon1:hover #Title1,
+    #Icon2:hover #Title2,
+    #Icon3:hover #Title3,
+    #Icon4:hover #Title4 {
+        width: max-content;
+        transform: translateY(calc(var(--FnH2)/-1));
+        opacity: 1;
+        cursor: var(--Info);
+    }
+}
+
+@media (min-width: 1080px) {
+
+    .Projects {
+        flex-direction: row;
+        gap: var(--FnH0);
+    }
+
+    .Project {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0 !important;
+    }
+
+    .Project img {
+        margin-bottom: var(--FnH4);
+        opacity: 0.4;
+    }
+
+    .ProjectInfo {
+        position: relative;
+    }
+
+    .ProjectHoveredImage {
+        filter: grayscale(0) !important;
+        opacity: 1 !important;
+    }
+
+    .ProjectHoveredInfo {
+        background-color: transparent !important;
+        padding-inline: 0 !important;
+        border-radius: 0 !important;
+    }
+
+    .ProjectHoveredIcons {
+        gap: var(--FnH5) !important;
+    }
+}
+
+@media (min-width: 1080px) and (orientation:landscape) {
+
+    #HomePage h1 {
+        margin-top: calc(var(--FnH4)*7)
+    }
+
+    .Heading-Primary {
+        margin-top: calc(var(--FnH6)*10);
+    }
+}
+
+@media (min-height: 1080px) {
+    #HomePage h1 {
+        margin-top: calc(var(--FnH4)*10);
+    }
+}

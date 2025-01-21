@@ -1,0 +1,135 @@
+/* #region Assets */
+:root {
+    /* Typography */
+    --FnH0: 8rem;
+    --FnH1: 6.4rem;
+    --FnH2: 4.8rem;
+    --FnH3: 3.6rem;
+    --FnH4: 3rem;
+    --FnH5: 2.4rem;
+    --FnH6: 1.8rem;
+    --FnP1: 1.6rem;
+    --FnP2: 1.4rem;
+    --WeightR: 400;
+    --WeightMed: 500;
+    --WeightSemiB: 600;
+    --WeightB: 700;
+
+    /* Colors */
+    --Black: #141414;
+    --Grey: #969696;
+    --White: #fafafa;
+    --Primary: #64beff;
+    --Secondary: #9bafcd;
+    --Accent: #191e28;
+    --Focus: #9bafcd66;
+    --Header: #191e2866;
+    --Btns: #050a0f80;
+    --Video: #191e28c2;
+    --Contacts: #fafafacc;
+    --Boxshadow: 0 0 8px 2px #64beff33;
+    --Tools: #000000fa;
+    --Certificate: #191e28f2;
+    --Figma1: #8296b4;
+    --Figma2: #879bb9;
+    --Figma3: #5f7896;
+    --Figma4: #829bb9;
+
+
+    /* Borders */
+    --BordersLg: 1.6rem;
+    --BordersR: 0.8rem;
+    --BordersSm: 0.4rem;
+
+    /* Transitions */
+    --Basic: all 250ms;
+    --Smooth: all 500ms;
+    --Slow: all 500ms cubic-bezier(0.4, 0, 0.4, 0.2);
+
+    /* Cursor */
+    --Default: default;
+    --Pointer: pointer;
+    --Info: help
+}
+
+/* #endregion Assets */
+
+/* #region Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 1.2rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--Accent);
+    margin-inline: 0.5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--Grey);
+    border: 0.25px solid var(--Accent);
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--Secondary);
+}
+
+@supports (scrollbar-color: var(--Grey) var(--Accent)) {
+    * {
+        scrollbar-color: var(--Grey) var(--Accent);
+        scrollbar-width: 1.2rem;
+    }
+}
+
+/* #endregion Scrollbar Styling */
+
+/* #region General Settings */
+Html {
+    font-size: 56.25%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: var(--WeightR);
+    font-family: 'Nunito', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+    border-radius: var(--BordersSm);
+    box-shadow: 0 0 0 0.5rem var(--Focus);
+    transition: var(--Basic);
+}
+
+Body {
+    background-color: #141414;
+    color: var(--White);
+    height: 100%;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+B {
+    font-weight: var(--WeightSemiB)
+}
+
+.Heading-Primary {
+    color: var(--White);
+    margin-top: calc(var(--FnH4)*4);
+    margin-bottom: var(--FnH3);
+    font-size: clamp(var(--FnH4), 6.25vw, var(--FnH2));
+    font-weight: var(--WeightB);
+}
+
+/* #endregion General Settings */
